@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=cylinder
+comment0.text=\r\n\ Question-3\ Solution\r\n
+comment1.params=
+comment1.target=cylinder()
+comment2.params=
+comment2.target=void\ cylinder_volume()
+comment3.params=
+comment3.target=int\ getradius()
+comment4.params=
+comment4.target=int\ getheight()
+comment5.params=radius
+comment5.target=void\ setradius(int)
+comment6.params=height
+comment6.target=void\ setheight(int)
+numComments=7

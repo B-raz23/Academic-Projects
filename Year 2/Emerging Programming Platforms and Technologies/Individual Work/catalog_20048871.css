@@ -1,0 +1,244 @@
+/*Several CSS properties for styling contents in XML document.*/
+
+/* style for top section */
+top {
+    display: block;
+    background: url("img/nav.jpg") fixed;
+    height: 75px;
+    width: 100%;
+    position: relative;
+}
+
+/* name of shop */
+shopName {
+    display: block;
+    font-family: algerian;
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+
+/* logo design */
+logo {
+    display: block;
+    margin: 10px;
+    position: relative;
+    background: url("img/logo.jpeg") no-repeat;
+    height: 1250px;
+    width: 87%;
+}
+
+/* style for page */
+page {
+    position: absolute;
+    background-color: rgb(194, 64, 64);
+    color: white;
+    top: 450px;
+    left: 1000px;
+    height: 440px;
+    border: 10ch;
+}
+
+/* style for heading tag */
+heading {
+    display: block;
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+shopDesc {
+    font-family: Bell MT;
+    display: block;
+    padding: 25px;
+    font-size: x-large;
+    font-style: italic;
+    text-align: justify;
+}
+
+head {
+    display: block;
+    margin-top: 30px;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+oName {
+    font-size: x-large;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-bottom: 0%;
+}
+
+giftCard {
+    display: block;
+}
+
+topic {
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100px;
+    color: rgb(139, 39, 148);
+    font-style: oblique;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+cardName {
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+cardImg:hover {
+    transform: scale(1.2);
+}
+
+cardImg[ID="img1"] {
+    display: inline-table;
+    background: url("img/C1.jpg") no-repeat;
+    height: 150px;
+    width: 343px;
+    position: relative;
+}
+
+cardImg[ID="img2"] {
+    display: inline-table;
+    background: url("img/C4.jpg") no-repeat;
+    height: 150px;
+    width: 343px;
+    position: relative;
+}
+
+cardImg[ID="img3"] {
+    display: inline-flex;
+    background: url("img/C5.jpg") no-repeat;
+    height: 150px;
+    width: 343px;
+    position: relative;
+}
+
+colour,
+size,
+material,
+cardCost,
+cardHolders,
+discount,
+validUpto,
+offer {
+    display: list-item;
+}
+
+card[type="physical"] {
+    color: midnightblue;
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+card[type="digital"] {
+    color: darkcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    text-align: center;
+    list-style-position: inside;
+}
+
+giftCode:hover {
+    transform: scale(1.2);
+}
+
+giftCode {
+    border-style: double;
+    display: inline-table;
+    position: relative;
+    border-color: chartreuse;
+    background-color: black;
+    color: yellow;
+    font-size: 50px;
+    padding: 40px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    margin-left: 80px;
+    margin-top: 0px;
+}
+
+card[code="C1"],
+card[code="C2"],
+card[code="C3"] {
+    display: inline-block;
+    float: none;
+    margin-top: 0%;
+    padding-inline: 40px;
+    margin-bottom: 100px;
+    padding-left: 70px;
+}
+
+card[code="C4"],
+card[code="C5"],
+card[code="C6"] {
+    display: inline-block;
+    float: none;
+    padding-inline: 70px;
+    margin-bottom: 70px;
+    padding-left: 90px;
+}
+
+card[code="C5"] {
+    padding-right: 0%;
+}
+
+bottom {
+    display: block;
+    background-color: rgb(194, 64, 64);
+    color: white;
+    height: 250px;
+    position: relative;
+}
+
+title {
+    padding: 20px;
+    padding-left: 75px;
+    font-weight: bolder;
+    display: block;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+contact {
+    font-family: Bell MT;
+    font-size: x-large;
+}
+
+name,
+street,
+phone,
+email,
+website,
+fbPage,
+insta,
+twitter {
+    display: block;
+    padding: 7px;
+    padding-left: 50px;
+}
+
+city {
+    padding-left: 50px;
+}
+
+address,
+cDetails,
+pages {
+    display: inline-table;
+    padding-inline: 70px;
+    list-style: none;
+}

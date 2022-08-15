@@ -1,0 +1,35 @@
+ |CONFIG:Kathmandu LAN.Token Ring:BusyLevelX:1|      199
+ |CONFIG:Kathmandu LAN.Token Ring:tokendelayX:1|      391
+ |Msg:Kathmandu LAN.Kathmandu ATM:KTM ATM Request:Manchester LAN.Server:transcmdtokendly:1|      577
+ |Msg:Kathmandu LAN.Kathmandu ATM:KTM ATM Request:Manchester LAN.Server:transcmddelivered:1|      844
+ |Msg:Kathmandu LAN.KTM Teller:KTM Teller Request:Manchester LAN.Server:transcmdtokendly:1|     1112
+ |Msg:Kathmandu LAN.KTM Teller:KTM Teller Request:Manchester LAN.Server:transcmddelivered:1|     1379
+ |CONFIG:Pokhara LAN.Token Ring:BusyLevelX:1|     1647
+ |CONFIG:Pokhara LAN.Token Ring:tokendelayX:1|     1835
+ |Msg:Pokhara LAN.Pokhara ATM:Pokhara ATM Request:Manchester LAN.Server:transcmdtokendly:1|     2017
+ |Msg:Pokhara LAN.Pokhara ATM:Pokhara ATM Request:Manchester LAN.Server:transcmddelivered:1|     2284
+ |Msg:Pokhara LAN.Pokhara Teller:Pokhara Teller Request:Manchester LAN.Server:transcmdtokendly:1|     2552
+ |Msg:Pokhara LAN.Pokhara Teller:Pokhara Teller Request:Manchester LAN.Server:transcmddelivered:1|     2831
+ |CONFIG:Manchester LAN.Link:BusyLevelX:1|     3111
+ |CONFIG:Manchester LAN.Link:BusyLevelY:1|     3293
+ |CONFIG:Manchester LAN.Link:tokendelayX:1|     3475
+ |CONFIG:Manchester LAN.Link:tokendelayY:1|     3651
+ |Msg:Manchester LAN.Server:Server Response::ECHO:transcmdtokendly:1|     3827
+ |Msg:Manchester LAN.Server:Server Response::ECHO:transcmddelivered:1|     4050
+ |CONFIG:WAN Cloud.Kathmandu Access:BusyLevelX:1|     4274
+ |CONFIG:WAN Cloud.Kathmandu Access:BusyLevelY:1|     4470
+ |CONFIG:WAN Cloud.Kathmandu Access:OutBufferLevel:1|     4666
+ |CONFIG:WAN Cloud.Manchester Access:BusyLevelX:1|     4875
+ |CONFIG:WAN Cloud.Manchester Access:BusyLevelY:1|     5073
+ |CONFIG:WAN Cloud.Manchester Access:OutBufferLevel:1|     5271
+ |CONFIG:WAN Cloud.Pokhara Access:BusyLevelX:1|     5482
+ |CONFIG:WAN Cloud.Pokhara Access:BusyLevelY:1|     5674
+ |CONFIG:WAN Cloud.Pokhara Access:OutBufferLevel:1|     5866
+ |CLDVC:WAN Cloud:Manchester - Kathmandu:FrmDelay:1|     6071
+ |CLDVC:WAN Cloud:Manchester - Kathmandu:Burst:1|     6268
+ |CLDVC:WAN Cloud:Kathmandu - Manchester:FrmDelay:1|     6462
+ |CLDVC:WAN Cloud:Kathmandu - Manchester:Burst:1|     6659
+ |CLDVC:WAN Cloud:Pokhara - Manchester:FrmDelay:1|     6853
+ |CLDVC:WAN Cloud:Pokhara - Manchester:Burst:1|     7046
+ |CLDVC:WAN Cloud:Manchester - Pokhara:FrmDelay:1|     7236
+ |CLDVC:WAN Cloud:Manchester - Pokhara:Burst:1|     7429

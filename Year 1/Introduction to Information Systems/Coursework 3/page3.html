@@ -1,0 +1,211 @@
+<!DOCTYPE html> <!-- doctype declaration of HTML5 -->
+<html>
+
+<head>
+    <!-- meta tag for describing the overall content, highlighting keywords and naming author-->
+    <meta name="description" content="Compare and contrast">
+    <meta name="keywords" content="Research, Compare, Contrast, Inspect">
+    <meta name="author" content="Biraj Sapkota">
+
+    <title>Research Page</title>
+
+    <!-- links external css file for editing this webpage-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- different Internal CSS used-->
+    <style>
+        .hello {
+            /*uses 2px padding and 1px margin for all content in hello class*/
+            padding: 2px;
+            margin: 1px;
+        }
+
+        .hello img {
+            /*makes the definite height and width of the images inside hello class with specified padding*/
+            height: 500px;
+            width: 600px;
+            padding: 10px;
+        }
+
+        .hello p {
+            /*makes the font-size of p tag elements of hello class to 23px with justify alignment and setting a particular background color*/
+            font-size: 23px;
+            text-align: justify;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Use of nav semantic tag to seperate the navigation content from others-->
+    <nav>
+        <table>
+            <!-- table tag for placing content row-wise-->
+            <tr>
+                <td>
+                    <img src="images\user.jpg" alt="user icon"> <!-- img tag for inserting images-->
+                </td>
+                <th>
+                    <strong>PORTFOLIO</strong> <!-- strong or <b> tag for bold text-->
+                </th>
+            </tr>
+        </table>
+        <ul>
+            <!-- unordered list with the list tag to lits down the contents-->
+            <li>
+                <a href="homepage.html">Home</a> <!-- anchor tag for navigating between webpages-->
+            </li>
+            <li>
+                <a href="page1.html">About me</a>
+            </li>
+            <li>
+                <a href="page2.html">Blog</a>
+            </li>
+            <li>
+                <button>
+                    <!-- creates a button as a link to navigate-->
+                    <a href="page4.html">Join me</a>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+    <!--draws a horizontal line for seperating contents-->
+
+    <div class="hello">
+        <!--div tags for creating classes and ids to seperate contents-->
+        <!--br tag breaks the old line and shifts to the new one-->
+        <br><br>
+        <div class="one">
+            <!--div tag for class one-->
+            <table>
+                <tr>
+                    <td>
+                        <img src="images/a.JPG" alt="nav">
+                        <!--image tag for inserting images-->
+                    </td>
+                    <td>
+                        <img src="images/a(1).JPG" alt="mynav">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <!--defines a paragraph for a block of text-->
+            <p>The previous photo is of the website which I had taken as a reference while second one is my webpage. In
+                that website, the author had made his navigation bar by placing a ‘div’ tag inside a main ‘div’ tag
+                followed by a ‘header’ tag. Inside the ‘header’ is again a ‘div’ tag and finally an ‘a’ tag has been
+                used to link different pages. Whereas, in my case I had defined a ‘nav’ tag inside which a non- list
+                style type ‘ul’ tag is placed within which the links formed from ‘a’ tag are placed in a ‘li’ tag
+                displaying the content inline. </p>
+        </div>
+
+        <hr>
+        <!--horizontal line-->
+        <br><br><br>
+
+        <div class="two">
+            <!--div tags for class two-->
+            <table>
+                <tr>
+                    <td>
+                        <img src="images/b.JPG" alt="photo">
+                    </td>
+                    <td>
+                        <img src="images/b(1).JPG" alt="myphoto">
+                    </td>
+                </tr>
+            </table>
+            <p>The first webpage owner uses three nested ‘div’ tags followed by a ‘section’ under which five ‘div’ tags
+                are placed in a nested form. These all tags are finally followed by an ‘img’ tag where the photos are
+                attached to display in the webpage. Instead, I had created a single ‘img’ tag with defined class name
+                inside a ‘div’ tag followed by a ‘figure’ tag and invoked the java script function for slideshow of the
+                five different images every 3 seconds stored in the array. This function invokes automatically when the
+                page is loaded.</p>
+        </div>
+
+        <hr>
+        <br><br><br>
+        <div class="three">
+            <table>
+                <!--keeping the content row-wise by using table-->
+                <tr>
+                    <td>
+                        <img src="images/c.JPG" alt="footer">
+                    </td>
+                    <td>
+                        <img src="images/c(1).JPG" alt="myfooter">
+                    </td>
+                </tr>
+            </table>
+            <p>The first photo is the picture of a website that uses a link for linking the author’s fb page, Instagram
+                and many other social medias. For this, he kept an extra ‘div’ tag inside a main ‘div’ tag followed by
+                an ‘a’ tag ended with an ‘img’ tag. The picture of social medias is placed inside ‘img’ tag to make it
+                as a link so did I. But I had a footer tag inside which ‘ul’ tag is used to list photo link using ‘li’.
+                Inside, ‘li’ tag there comes an ‘a’ tag followed by ‘img’ tag. </p>
+        </div>
+
+        <hr>
+        <br><br><br>
+        <div class="four">
+            <table>
+                <tr>
+                    <!--defines a row in a table-->
+                    <td>
+                        <img src="images/d.JPG" alt="form">
+                    </td>
+                    <td>
+                        <img src="images/d(1).JPG" alt="myform">
+                    </td>
+                </tr>
+            </table>
+            <p>The author of the webpage shown in first part creates a place using ‘section’ tag inside which is the
+                ‘main’ tag. Within it, there are two ‘div’ tags which are followed by the form tag where block of codes
+                is written to create a form. In mine webpage, I kept ‘article’ tag inside which a ‘div’ tag exists.
+                Inside it comes another ‘div’ tag where the form tag is actually placed and several form-making codes
+                are placed within it.</p>
+        </div>
+
+        <hr>
+        <br><br><br>
+        <div class="five">
+            <!--div tag to create five class-->
+            <table>
+                <tr>
+                    <td>
+                        <!--sets the data in a column of a row-->
+                        <img src="images/e.JPG" alt="blog">
+                    </td>
+                    <td>
+                        <img src="images/e(1).JPG" alt="myblog">
+                    </td>
+                </tr>
+            </table>
+            <p>For creating blogs, the author has kept a ‘main’ tag inside a ‘div’ tag which is followed by 3 different
+                ‘div’ tags in nested form. The last ‘div’ tag contains ‘article’ tag inside which again it’s a ‘div’
+                tag. Finally, several texts are written inside this ‘div’ tag in a ‘p’ tag. I had also made an ‘article’
+                tag which is followed by two nested ‘div’ tags under which a ‘p’ tag is defined to present several
+                blocks of text.</p>
+        </div>
+    </div>
+    <!--end of hello class made by div tag-->
+
+    <hr>
+    <footer>
+        <!-- semantic tag for identifying footer content-->
+        <ul>
+            <li>
+                <!--Use of anchor and image tag to make the image as a link to navigate-->
+                <a href="https://www.facebook.com/biraj.sapkota.58">
+                    <img src="images\fb.jpg" alt="Facebook icon">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/biraj_sapkota123/">
+                    <img src="images\ig.jpg" alt="Instagram icon">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

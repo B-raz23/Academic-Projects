@@ -1,0 +1,173 @@
+<!DOCTYPE html> <!-- doctype declaration of HTML5 -->
+<html>
+
+<head>
+    <!-- meta tag for describing the overall content, highlighting keywords and naming author-->
+    <meta name="description" content="Home page of Portfolio Website">
+    <meta name="keywords" content="Portfolio, photos, quotes">
+    <meta name="author" content="Biraj Sapkota">
+
+    <title>Portfolio Homepage</title>
+
+    <!-- links external css file for editing this webpage-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- different Internal CSS used-->
+    <style>
+        .marquee {
+            /*edits the elements within marquee tag with font size of 50 px with new color and style as italics*/
+            font-size: 50px;
+            font-style: italic;
+            color: blueviolet;
+        }
+
+        .figure {
+            /*sets margin and padding for the image*/
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .simple {
+            /*changes the font family and size of the content with the simple class along with setting padding and margins */
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .simple table tr td {
+            /*sets the padding of the table data by 20px*/
+            padding: 20px;
+        }
+
+        p {
+            /*sets a color for p tag elements along with justify as text alignment*/
+            color: aqua;
+            text-align: justify;
+        }
+    </style>
+
+    <!--importing external script file-->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Use of nav semantic tag to seperate the navigation content from others-->
+    <nav>
+        <table>
+            <!-- table tag for placing content row-wise-->
+            <tr>
+                <td>
+                    <img src="images\user.jpg" alt="user icon"> <!-- img tag for inserting images-->
+                </td>
+                <th>
+                    <strong>PORTFOLIO</strong> <!-- strong or <b> tag for bold text-->
+                </th>
+            </tr>
+        </table>
+        <ul>
+            <!-- unordered list with the list tag to lits down the contents-->
+            <li>
+                <a href="page1.html">About me</a> <!-- anchor tag for navigating between webpages-->
+            </li>
+            <li>
+                <a href="page2.html">Blog</a>
+            </li>
+            <li>
+                <a href="page3.html">Research</a>
+            </li>
+            <li>
+                <button>
+                    <!-- creates a button for navigating between webpages-->
+                    <a href="page4.html">Join me</a>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <hr>
+    <!--draws a horizontal line for seperating contents-->
+
+    <header>
+        <div class="marquee">
+            <!-- div tags for classes and id's-->
+            <marquee behavior="alternate" direction="left">
+                <!-- marquee for scrolling text-->
+                <strong>"Life is either nothing or a daring adventure."</strong>
+                <!--bold the text-->
+            </marquee>
+        </div>
+    </header>
+
+    <article>
+        <div class="figure">
+            <!-- div tags for classes and id's-->
+            <!--semantic tag for placing figures-->
+            <figure>
+                <!--placing image with definite height and width-->
+                <img name="change" alt="Photo gallery" height="100%" width="100%">
+                <br><br>
+                <!--provides a caption to the image-->
+                <figcaption style="text-align: center; font-size: 40px; color: rgb(196, 235, 27);">
+                    <!--inline css for editing the caption-->
+                    Photo Gallery
+                </figcaption>
+            </figure>
+        </div>
+        <br>
+        <!--breaks the old line and shifts to the new one-->
+        <div class="simple">
+            <!-- div tag for specifying classes or id's for several block of codes -->
+            <table>
+                <!-- table tag for placing content row-wise-->
+                <tr style="font-style: italic;">
+                    <td>
+                        <!--p tag helps to make paragraphs-->
+                        <p style="color: darksalmon;">Welcome to my portfolio website. Everyone is heartly welcomed to
+                            be friends cause I am in
+                            need of more friends. You can know me more from here.</p>
+                        <!--use of inline css overwriting internal-->
+                    </td>
+                    <td>
+                        <p style="color:cornflowerblue;">You could easily navigate through the webpages and get
+                            information about me. After that, you
+                            could join me by simply filling the joining form.</p>
+                    </td>
+                    <td>
+                        <p style="color:darksalmon ;">You could contact me or send a message if needed any help through
+                            my phone, e-mail, facebook
+                            or any media. I am always with you.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </article>
+
+    <hr>
+    <!--creates a horizontal line for seperating contents-->
+
+    <footer>
+        <!-- semantic tag for identifying footer content-->
+        <ul>
+            <!--listing the elements using ul tag-->
+            <li>
+                <!--Use of anchor and image tag to make the image as a link to navigate-->
+                <a href="https://www.facebook.com/biraj.sapkota.58">
+                    <img src="images/fb.jpg" alt="Facebook icon">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/biraj_sapkota123/">
+                    <img src="images/ig.jpg" alt="Instagram icon">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <!--Internal java script codes-->
+    <script>
+        alert("Welcome to my page !");     //alert messages will pop up on loading the webpage 
+    </script>
+</body>
+
+</html>

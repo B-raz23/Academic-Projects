@@ -1,0 +1,247 @@
+<!DOCTYPE html> <!-- doctype declaration of HTML5 -->
+<html>
+
+<head>
+    <!-- meta tag for describing the overall content, highlighting keywords and naming author-->
+    <meta name="description" content="Cirriculum Vitae">
+    <meta name="keywords" content="CV, Skills, Education">
+    <meta name="author" content="Biraj Sapkota">
+
+    <title>CV</title>
+
+    <!-- links external css file for editing this webpage-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- different Internal CSS used-->
+    <style>
+        h1 {
+            /*edits the font size; changes the font family of text with a new color and aligning texts at centre for each h1*/
+            font-size: 70px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: coral;
+        }
+
+        .aside {
+            /*left-padding is made to 30px for the content in "aside" class*/
+            padding-left: 30px;
+        }
+
+        #details {
+            /*different values are set for padding of the content along with a specified background color; margin is kept 8px with the use of flex to layout the content of 'details' id */
+            margin: 8px;
+            padding-left: 14px;
+            background-color: burlywood;
+            flex: 30%;
+            padding-bottom: 10px;
+            padding-top: 30px;
+        }
+
+        b {
+            /*makes all <b> tag elements font-size 40px*/
+            font-size: 40px;
+        }
+
+        ul {
+            /*removes the list styles of <ul> tag elements along  with the element font-size as 20px*/
+            list-style-type: none;
+            font-size: 20px;
+        }
+
+        table {
+            /*makes 20px the font-size for each element inside the table tag*/
+            font-size: 20px;
+        }
+
+        tr th b {
+            /*increase the content font size of the allocated path*/
+            font-size: 90px;
+        }
+
+        #name {
+            /*defines a new font family for the 'name' id elements along with change in color*/
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: goldenrod;
+        }
+
+        .layout {
+            /*designs flex for displaying the contents of 'layout' class*/
+            display: flex;
+        }
+
+        .layout strong {
+            /*sets the font-size of content inside strong tag of the layout class*/
+            font-size: 30px;
+        }
+
+        #para {
+            /*ID 'para' contents occupy 70% of the screen with a specified top padding and a suitable margin making the background color as mentioned*/
+            flex: 70%;
+            padding-top: 5px;
+            background-color: gainsboro;
+            margin: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Use of nav semantic tag to seperate the navigation content from others-->
+    <nav>
+        <table>
+            <!-- table tag for placing content row-wise-->
+            <tr>
+                <td>
+                    <img src="images\user.jpg" alt="user icon"> <!-- img tag for inserting images-->
+                </td>
+                <th>
+                    <strong>PORTFOLIO</strong> <!-- strong or <b> tag for bold text-->
+                </th>
+            </tr>
+        </table>
+        <ul>
+            <!-- unordered list with the list tag to lits down the contents-->
+            <li>
+                <a href="homepage.html">Home</a> <!-- anchor tag for navigating between webpages-->
+            </li>
+            <li>
+                <a href="page2.html">Blog</a>
+            </li>
+            <li>
+                <a href="page3.html">Research</a>
+            </li>
+            <li>
+                <button>
+                    <!-- creates a button for navigating between webpages-->
+                    <a href="page4.html">Join me</a>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <hr>
+    <!--draws a horizontal line for seperating contents-->
+
+    <header>
+        <h1>Cirriculum Vitae (CV)</h1>
+        <!--1st degree heading tag-->
+    </header>
+
+    <article>
+        <div class="aside">
+            <!-- div tag for specifying classes or id's for several block of codes -->
+            <table>
+                <tr>
+                    <!-- specifies a row to place the document-->
+                    <td>
+                        <figure>
+                            <!--semantic tag for placing figures-->
+                            <img src="images\profile.jpg" alt="My Photo" height="500px" width="350px">
+                            <!--placing image with different height and width-->
+                        </figure>
+
+                    </td>
+                    <!--<td> specifies the data to be inserted in a particular row-->
+                    <th>
+                        <div id="name">
+                            <!--specifying an ID for specific block of codes using div tag-->
+                            <b>BIRAJ</b>
+                            <br>
+                            <!--breaks the line to a new one-->
+                            <b>SAPKOTA</b>
+                        </div>
+
+                        <br><br><br><br>
+                        <strong style="font-family: Arial, Helvetica, sans-serif; font-size: 50px;">
+                            <!--Inline CSS used for changing the font size and font family-->
+                            STUDENT
+                        </strong>
+                    </th>
+                </tr>
+            </table>
+
+            <div class="layout">
+                <!-- div tags for classes and id's-->
+                <div id="details">
+                    <b>Contacts</b>
+                    <br><br>
+                    <table style="padding-left: 30px;">
+                        <tr>
+                            <th>Phone:</th>
+                            <td>+977-9800000000</td>
+                        </tr>
+                        <tr>
+                            <th>Website:</th>
+                            <td>http://127.0.0.1:5500/homepage.html</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>beerazchelsea23@gmail.com</td>
+                        </tr>
+                    </table>
+
+                    <br><br><br>
+                    <b>Hobbies</b>
+
+                    <ul>
+                        <!--lists a series of contents with no proper numbering-->
+                        <li>Hiking and Trekking</li>
+                        <li>Taking photos</li>
+                        <li>Playing football</li>
+                        <li>Online Gaming</li>
+                    </ul>
+                </div>
+                <div id="para">
+                    <ul>
+                        <li>
+                            <strong>Education</strong>
+
+                            <!--<p> tag lets the user create a paragraph and <mark> highlights the specified text;where <i> tag italicises the text-->
+                            <p> <mark>2015-2016:</mark>Completed Basic Level from - <i>Sainik Awasiya Mahavidyalaya</i>
+                            </p>
+                            <p> <mark>2017-2018:</mark>Completed Secondary School from - <i>Sainik Awasiya
+                                    Mahavidyalaya</i>
+                            </p>
+                            <p> <mark>2018-2020:</mark>Completed High School from - <i>St.Xavier's School,
+                                    Jawalakhel</i>
+                            </p>
+                        </li>
+
+                        <li>
+                            <strong>Work Experience</strong>
+                            <br>
+                            <p> Not still started working.</p>
+                        </li>
+                        <li>
+                            <strong>Skills</strong>
+                            <!--<u> tag underlines the block of text-->
+                            <p> <u>Known languages</u>: English, Nepali, Hindi </p>
+                            <p> Knows basics about java, CSS, javascript, mysql </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <hr>
+
+    <footer>
+        <!-- semantic tag for identifying footer content-->
+        <ul>
+            <li>
+                <!--Use of anchor and image tag to make the image as a link to navigate-->
+                <a href="https://www.facebook.com/biraj.sapkota.58">
+                    <img src="images\fb.jpg" alt="Facebook icon">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/biraj_sapkota123/">
+                    <img src="images\ig.jpg" alt="Instagram icon">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

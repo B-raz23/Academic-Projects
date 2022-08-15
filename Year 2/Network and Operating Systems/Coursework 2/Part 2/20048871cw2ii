@@ -1,0 +1,129 @@
+#!/bin/bash
+# tells the terminal to use bash to execute all of the below mentioned statements
+
+
+echo -e "Date: \c";date +%F	# displays the program executed date
+echo -e "Time: \c";date +%r	# displays the program executed time
+
+bandName() {	# function for displaying band Names with their codes
+	echo
+	echo "************************"
+	echo "* Band Name   *  Code  *"
+	echo "************************"
+	echo "*  Beatles    *   BEA  *"
+	echo "*   AC/DC     *   AD   *"
+	echo "*   Queen     *   QUE  *"
+	echo "*  Blondie    *   BLO  *"
+	echo "*  Nirvana    *   NIR  *"
+	echo "************************"
+}
+
+checkBest() {	# function for guessing the best band
+	echo -e "\v\vGuess the best music band. \c"
+	read code	# takes best band code as input from user
+	if [[ $code = BLO && ${#code} -ne 0 ]]	# checks whether or not the user chooses the best band 
+	then
+		echo -e "\nBlondie, American rock group known for incorporating varied influences, including avant-garde, reggae, and hip-hop, into the new wave sound of the 1970s and ’80s. Blondie was formed in 1974 by vocalist Debbie Harry and guitarist Chris Stein.\n\n"	# displays the details of the best band 			
+	else
+		echo -e "\nYour guess is wrong. Try again!!\n\n"	# displays error message for wrong guess
+		checkBest	# wrong guess calls itself
+	fi
+	# displaying the members with their codes
+	echo "****************************"
+	echo "*  Member Name    *  Code  *"
+	echo "****************************"
+	echo "*  John Lennon    *   JL   *"
+	echo "*  Angus Young    *   AY   *"
+	echo "* Freddie Mercury *   FM   *"
+	echo "*  Debbie Harry   *   DH   *"
+	echo "*  Kurt Cobain    *   KC   *"
+	echo "****************************"
+	checkMember	# calling the function checkMember
+}
+
+checkMember() {	# function for choosing three members
+	echo -e "\vSelect any three members. \c"
+	read m1 m2 m3	# take three codes as input from user
+	declare -a mem=($m1 $m2 $m3)	# creating an array and storing the user inputs in it
+	if [ ${#mem[*]} -eq 3 ]	# checks whether or not only three elements present in the array
+	then							
+		if [[ $m1 != $m2 && $m1 != $m3 && $m2 != $m3 ]]		# checks whether or not elements in the array are unique
+		then
+			for m in ${mem[@]}	# takes each element in the array one at a time and stores in 'm'
+			do
+				if [[ $m = "JL" || $m = "AY" || $m = "FM" || $m = "DH" || $m = "KC" ]]		# checks whether the inputs matched the member codes or not
+				then
+					continue	# continues the loop leaving remaining statements to be executed
+				else
+					echo -e "\vSelect only from the given codes !!\v\v"	# displays error message for invalid codes given
+					checkMember	# calls itself
+				fi											
+			done
+		else
+			echo -e "\vThree given codes must be unique !!\v\v"	# displays error message for duplicate inputs given
+			checkMember	# calls itself
+		fi
+						
+	else
+		echo -e "\vOnly three codes expected !!\n\n"	# displays error message for more than three inputs given
+		checkMember	# calls itself
+	fi
+	view	# calls the function view						
+}
+
+view() {	# function for choosing one member out of three
+	echo
+	PS3="Select one from three codes. "	# displays a suitable message while choosing options in select statements  
+	select one in $m1 $m2 $m3	# lets the user make a choice out of three
+	do
+		case $one in	# checks whether or not the user choice had a file
+			AY) cat AY ;;	# display file AY when chosen
+			DH) cat DH ;;	# display file DH when chosen
+			KC) cat KC ;;	# display file KC when chosen
+			*) echo -e "\nDesired file not found !!\v\v"	# displays error message if file not found
+			   checkMember ;;	# calls the function checkMember
+		esac
+		break	# terminates the first inner loop
+	done
+	repeat	# calls the function repeat
+}
+
+repeat() {	# function whether or not to repeat the program
+	echo -e "\n\nDo you want to continue? (Y/N). \c"
+	read x	# user input
+	case $x in	# checks for Y|N for the input
+		Y|y) bandName	# calls the functions bandName and then checkBest if input is y or Y
+		     checkBest ;;
+		N|n) figlet "Thank You"	# displays exit message for N or n
+	     	     exit ;;
+		*) echo -e "\n\nError! Choose either Y or N."	# displays error message for other inputs
+		   repeat ;;	# calls itself
+	esac
+}
+
+if [ $# == 2 ]	# checks whether or not the argument count is 2
+then
+	if [[ ($1 =~ ^[a-z' 'A-Z]+$) && ($2 =~ ^[0-9]+$) ]]	# checks whether or not the first argument is alphabets and second is only integers
+	then
+		for cnt in {2..0}	# using loop for three times
+		do
+			echo -e "\nEnter secret key: \c"
+			read -s pass	# takes password as input
+			if [ $pass == "123" ]	# checks for right password
+			then
+				echo
+				figlet "Welcome !!"
+				echo "ID: $2"	# displays the ID given
+				echo -e "Name: $1\n"	# displays the Name given
+				bandName	# calls the function bandName
+				checkBest	# calls the function checkBest
+			else
+				echo -e "\nWrong password!! $cnt time remaining.\n"	# displays error message for wrong password with remaining attempts
+			fi
+		done
+	else
+		echo -e "Wrong Input!! Argument type mismatch.\n"	# displays error message for invalid argument type
+	fi
+else
+	echo -e "\nYou must pass two arguments !!\n"	# displays error message when given arguments is not equal to 2
+fi

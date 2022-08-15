@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>      <!-- XML prologue -->
+
+<!-- XSD code for validation of structure and content in the XML document.-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">     <!-- defining namespace -->
+    <xs:element name="cardShop">    <!-- root element -->
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="top">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="shopInfo">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="shopName" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="section" fixed="nav" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="wall">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="logo"/>
+                            <xs:element name="page">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="heading" type="xs:string"/>
+                                        <xs:element name="about">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="shopDesc" type="xs:string"/>
+                                                    <xs:element name="owner">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="head" type="xs:string"/>
+                                                                <xs:element name="oName" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="status" use="required" fixed="boss"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="format" use="required" fixed="widget"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="giftCard">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="topic" type="xs:string"/>
+                            <xs:element name="card" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="cardImg" minOccurs="0" maxOccurs="1">
+                                            <xs:complexType>
+                                                <xs:attribute name="ID" type="xs:string" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="giftCode" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                                        <xs:element name="cardName" type="xs:string"/>
+                                        <xs:element name="colour" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                                        <xs:element name="size" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                                        <xs:element name="material" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                                        <xs:element name="cardCost">
+                                            <xs:simpleType>     <!-- Use of restriction for restricting data content.-->
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="Cost: &#163;[0-9]+"></xs:pattern>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="cardHolders" type="xs:integer"/>
+                                        <xs:element name="discount" type="xs:string"/>
+                                        <xs:element name="validUpto" type="xs:date"/>
+                                        <xs:element name="offer" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="code" type="xs:ID" use="required"/>
+                                    <xs:attribute name="type" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="physical"/>      <!-- Use of enumeration for choices-->
+                                                <xs:enumeration value="digital"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="colorCode" type="xs:string" use="optional" default="not specified"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="bottom">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="title" type="xs:string"/>
+                            <xs:element name="contact">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="address">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="name" type="xs:string"/>
+                                                    <xs:element name="street" type="xs:string"/>
+                                                    <xs:element name="city" type="xs:string"/>
+                                                    <xs:element name="state" type="xs:string"/>
+                                                    <xs:element name="postalCode" type="xs:int"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="cDetails">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="phone">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="tel" type="xs:string"/>
+                                                                <xs:element name="countryCode" type="xs:string"/>
+                                                                <xs:element name="phoneNo" type="xs:string"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="online">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="email">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                            <xs:pattern value="[^@]+@[^\.]+\..+"></xs:pattern>  <!-- Regex used for validating email-->
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="website" type="xs:string"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="pages">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="fbPage">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="fbID" type="xs:string"/>
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="insta" type="xs:string"/>
+                                                    <xs:element name="twitter" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

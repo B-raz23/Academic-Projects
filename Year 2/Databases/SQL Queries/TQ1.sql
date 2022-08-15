@@ -1,0 +1,8 @@
+SQL> SELECT Painting_ID, Painting_Name, Painter_ID, Monthly_Charge, Buying_Cost FROM Painting WHERE Availability = 'Yes'
+  2  	ORDER BY Theme;
+
+PAINTING_I PAINTING_NAME                                                                                                                                          PAINTER_ID    MONTHLY_CHARGE BUYING_COST                                                                                                                                                                                                                                                                                                          
+---------- ------------------------------------------------------------------------------------------------------------------------------------------------------ ------------- -------------- -----------                                                                                                                                                                                                                                                                                                          
+P6         Race Horses                                                                                                                                            A7                       250        2500                                                                                                                                                                                                                                                                                                          
+
+SQL> spool off

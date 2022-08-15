@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>      <!-- XML prologue -->
+
+<?xml-model href="catalog_20048871.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>        <!-- linking XSD-->
+<?xml-stylesheet href="catalog_20048871.css" type="text/css"?>       <!-- linking CSS-->
+
+<!-- Several User defined elements for structuring the contents in a web Page. -->
+
+<cardShop>      <!-- root element-->
+    <top section="nav">
+        <shopInfo>
+            <shopName>Card House</shopName>
+        </shopInfo>
+    </top>
+    <wall>
+        <logo/>
+        <page format="widget">
+            <heading>About</heading>
+            <about>
+                <shopDesc>
+                    <![CDATA[
+                        The main discussion topics at CARD HOUSE often pave the way to surprising and unexpected conversations thanks to our engaged forum users. Our Forum is dedicated to enhancing the forum experience by offering plenty of opportunities for users to engage with each other in an interesting and safe online environment.
+                    ]]>
+                </shopDesc>
+                <owner status="boss">
+                    <head>Founder</head>
+                    <oName>Kam Wesley Troelsen</oName>
+                </owner>
+            </about>
+        </page>
+    </wall>
+    <giftCard>      
+        <topic>Gift Cards</topic>
+        <card code="C1" type="physical" colorCode="b1">
+            <cardImg ID="img1"/>
+            <cardName>Card-A</cardName>
+            <colour>Colour: Blue</colour>
+            <cardCost>Cost: &#163;9999</cardCost>
+            <cardHolders>555</cardHolders>
+            <discount>Discount: 3%</discount>
+            <validUpto>2025-12-22</validUpto>
+            <offer>Offer: Zero Tax Charge</offer>
+        </card>
+        <card code="C2" type="digital">
+            <giftCode>GIFT-0001</giftCode>
+            <cardName>Card-B</cardName>
+            <size>Size: undefined</size>
+            <cardCost>Cost: &#163;3245</cardCost>
+            <cardHolders>283</cardHolders>
+            <discount>Discount: 1.5%</discount>
+            <validUpto>2027-02-21</validUpto>
+            <offer>Offer: Free Delivery</offer>
+        </card>
+        <card code="C3" type="digital" colorCode="none">
+            <giftCode>GIFT-0002</giftCode>
+            <cardName>Card-C</cardName>
+            <colour>Colour: Colourless</colour>
+            <cardCost>Cost: &#163;8642</cardCost>
+            <cardHolders>2348</cardHolders>
+            <discount>Discount: 2.5%</discount>
+            <validUpto>2028-03-31</validUpto>
+            <offer>Offer: Buy 5 Get 1 Free.</offer>
+        </card>
+        <card code="C4" type="physical">
+            <cardImg ID="img2"/>
+            <cardName>Card-D</cardName>
+            <size>Size: 10cm</size>
+            <cardCost>Cost: &#163;9989</cardCost>
+            <cardHolders>355</cardHolders>
+            <discount>Discount: 1.25%</discount>
+            <validUpto>2027-04-22</validUpto>
+            <offer>Offer: Get extra bonus item.</offer>
+        </card>
+        <card code="C5" type="physical">
+            <cardImg ID="img3"/>
+            <cardName>Card-E</cardName>
+            <material>Material Used: Plastic</material>
+            <cardCost>Cost: &#163;3499</cardCost>
+            <cardHolders>844</cardHolders>
+            <discount>Discount: 5%</discount>
+            <validUpto>2024-12-02</validUpto>
+            <offer>Offer: Free item on &#163; 1000 purchase.</offer>
+        </card>
+        <card code="C6" type="digital">
+            <giftCode>GIFT-0003</giftCode>
+            <cardName>Card-F</cardName>
+            <material>Material Used: Not defined</material>
+            <cardCost>Cost: &#163;3342</cardCost>
+            <cardHolders>786</cardHolders>
+            <discount>Discount: 4.5%</discount>
+            <validUpto>2029-04-01</validUpto>
+            <offer>Offer: Get extra cashback.</offer>
+        </card>
+    </giftCard>
+    <bottom>
+        <title>Contact</title>
+        <contact>
+            <address>
+                <name>CARD HOUSE</name>
+                <street>500 Alexandra Terrace Street</street>
+                <city>Dorsett City, </city>
+                <state>London </state>
+                <postalCode>89765</postalCode>
+            </address>
+            <cDetails>
+                <phone>
+                    <tel>Tel:</tel>
+                    <countryCode>+44</countryCode>
+                    <phoneNo>123-456-789-0</phoneNo>
+                </phone>
+                <online>
+                    <email>Email: gift@cardhouse.com.uk</email>     <!-- validated by regular expression "[^@]+@[^\.]+\..+" in XSD. -->
+                    <website>Web: www.cardhouse.com.uk</website>
+                </online>
+            </cDetails>
+            <pages>
+                <fbPage fbID="CH">www.facebook.com/cardhouse</fbPage>
+                <insta>www.instagram.com/cardhouse</insta>
+                <twitter>www.twitter.com/cardhouse</twitter>
+            </pages>
+        </contact>
+    </bottom>
+</cardShop>

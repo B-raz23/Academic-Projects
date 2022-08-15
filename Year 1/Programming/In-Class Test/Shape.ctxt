@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Shape
+comment0.text=\r\n\ Question-5\ Solution\ part-a\r\n
+comment1.params=length\ breadth
+comment1.target=void\ RectangleArea(int,\ int)
+comment2.params=side
+comment2.target=void\ SquareArea(int)
+comment3.params=radius
+comment3.target=void\ CircleArea(int)
+numComments=4

@@ -1,0 +1,69 @@
+/*Following are the external CSS commands for giving each webpage of the website a similar kind of look*/
+
+nav {
+  /*makes the background color of the navigation bar content black with the bottom padding as 1px*/
+  background-color: rgb(20, 4, 22);
+  padding-bottom: 1px;
+}
+
+nav ul {
+  /*removes the list style type of the content within nav tag along with aligning the text in centre*/
+  list-style-type: none;
+  text-align: right;
+}
+
+nav ul li {
+  /*displays the list items in a single line with a gap(padding) of 30px*/
+  display: inline;
+  padding: 30px;
+}
+
+nav ul li a {
+  /*edits the color of anchor tag elements along with their font-size removing any text decoration type */
+  text-decoration: none;
+  color: peru;
+  font-size: 25px;
+}
+
+nav ul li a:hover {
+  /*makes the element color red with its background color aliceblue when user places the mouse cursor over the link*/
+  color: red;
+  background-color: aliceblue;
+}
+
+nav ul li a:active {
+  /*makes the link text color green just before going to next page*/
+  color: green;
+}
+
+nav img {
+  /*makes the image within the nav tag of a definite height and width*/
+  height: 40px;
+  width: 40px;
+}
+
+nav table tr th strong {
+  /*edits the font size and color of the element within the strong tag of nav tag along with a specific left side padding*/
+  font-size: 40px;
+  padding-left: 20px;
+  color: white;
+}
+
+footer ul {
+  /*edits the content of ul tag within the footer tag by chaniging its background color, removing any listing styles for ul tag elements and aligning the text at centre*/
+  background-color: whitesmoke;
+  list-style-type: none;
+  text-align: center;
+}
+
+footer ul li {
+  /*displays the content of list tag into a same line with padding as 20px*/
+  display: inline;
+  padding: 20px;
+}
+
+footer ul li a img {
+  /*makes the images size within the footer tag by changing height and width of the image */
+  height: 75px;
+  width: 75px;
+}

@@ -1,0 +1,144 @@
+Compuware COMNET III  Release 2.5.2.814  Wed Dec 15 09:58:37 2021   PAGE     1
+
+                             20048871 Biraj Sapkota                             
+
+                         NODES: RECEIVED MESSAGE COUNTS                         
+
+                    REPLICATION 1 FROM 60.0 TO 180.0 SECONDS                    
+
+      RECEIVER            COUNT                   MESSAGE NAME
+______________________  __________  _________________________________________
+
+Manchester LAN.Server        252    Pokhara ATM Request                      
+Manchester LAN.Server        256    KTM ATM Request                          
+
+
+
+Compuware COMNET III  Release 2.5.2.814  Wed Dec 15 09:58:37 2021   PAGE     2
+
+                             20048871 Biraj Sapkota                             
+
+                           LINKS: CHANNEL UTILIZATION                           
+
+                    REPLICATION 1 FROM 60.0 TO 180.0 SECONDS                    
+
+                             FRAMES           TRANSMISSION DELAY (MS)       %
+LINK                   DELIVERED RST/ERR  AVERAGE    STD DEV    MAXIMUM   UTIL
+_____________________  _________ ______  _________  _________  _________  _____
+
+Kathmandu LAN.Token Ri     12303      0      0.036      0.012      0.082 0.3680
+Pokhara LAN.Token Ring     12324      0      0.036      0.012      0.082 0.3695
+Manchester LAN.Link         9518      0      0.065      0.014      0.136 0.4832
+
+
+Compuware COMNET III  Release 2.5.2.814  Wed Dec 15 09:58:37 2021   PAGE     3
+
+                             20048871 Biraj Sapkota                             
+
+                         WAN CLOUDS: FRAME DELAY BY VC                          
+
+                    REPLICATION 1 FROM 60.0 TO 180.0 SECONDS                    
+
+CLOUD:                      FRAME DELAY (MS)               BURST SIZE (kb)
+  VC                      AVG      STD      MAX           AVG           MAX
+______________________  _______  _______  _______    ____________  ____________
+
+WAN Cloud
+  Manchester - Kathman       61        0       61               3             6
+  Kathmandu - Manchest       70       24      165               5            10
+  Pokhara - Manchester       70       25      166               5            11
+  Manchester - Pokhara       61        0       61               3             6
+
+
+Compuware COMNET III  Release 2.5.2.814  Wed Dec 15 09:58:37 2021   PAGE     4
+
+                             20048871 Biraj Sapkota                             
+
+                         WAN CLOUDS: FRAME COUNTS BY VC                         
+
+                    REPLICATION 1 FROM 60.0 TO 180.0 SECONDS                    
+
+CLOUD:                                    FRAMES / KILOBITS
+  VC:  FRAMES                    ACCEPTED                     DROPPED
+       KILOBITS            NORMAL          DE           NORMAL          DE
+______________________  ____________  ____________   ____________  ____________
+
+WAN Cloud               (TOTAL KILOBITS TRANSMITTED =         2734 )
+  Manchester - Kat Frm          1381             0              0             0
+                    kb           442             0              0             0
+  Kathmandu - Manc Frm          2378             0              0             0
+                    kb           924             0              0             0
+  Pokhara - Manche Frm          2381             0              0             0
+                    kb           923             0              0             0
+  Manchester - Pok Frm          1389             0              0             0
+                    kb           444             0              0             0
+
+
+Compuware COMNET III  Release 2.5.2.814  Wed Dec 15 09:58:37 2021   PAGE     5
+
+                             20048871 Biraj Sapkota                             
+
+                         WAN CLOUDS: ACCESS LINK STATS                          
+
+                    REPLICATION 1 FROM 60.0 TO 180.0 SECONDS                    
+
+CLOUD:                            FRAMES            BUFFER (BYTES)       % UTIL
+  ACCESS LINK  (ENTRY)     ACCEPTED    DROPPED    MAX     AVG     STD          
+               (EXIT)                                                          
+________________________  __________  _________  ______  ______  ______  ______
+
+WAN Cloud
+  Kathmandu Access Entry        2377          0    N/A     N/A     N/A   100.00
+                    Exit        1381          0      40       3      11    8.55
+  Manchester Acces Entry        2769          0    N/A     N/A     N/A   100.00
+                    Exit        4758          0     273      22      38   34.29
+  Pokhara Access   Entry        2381          0    N/A     N/A     N/A   100.00
+                    Exit        1389          0      40       3      11    8.60
+
+
+Compuware COMNET III  Release 2.5.2.814  Wed Dec 15 09:58:37 2021   PAGE     6
+
+                             20048871 Biraj Sapkota                             
+
+                   MESSAGE + RESPONSE SOURCES: MESSAGE DELAY                    
+
+                    REPLICATION 1 FROM 60.0 TO 180.0 SECONDS                    
+
+ORIGIN / MSG SRC NAME:  MESSAGES                 MESSAGE DELAY 
+  DESTINATION LIST      ASSEMBLED      AVERAGE       STD DEV       MAXIMUM
+______________________  _________   ____________  ____________  ____________
+
+Kathmandu LAN.KTM Teller / src KTM Teller Request:
+  Manchester LAN.Serve          0       0.000 MS      0.000 MS      0.000 MS
+Kathmandu LAN.Kathmandu ATM / src KTM ATM Request:
+  Manchester LAN.Serve         20   117.09741 S   32655.931 MS  173.00271 S 
+Pokhara LAN.Pokhara Teller / src Pokhara Teller Request:
+  Manchester LAN.Serve          0       0.000 MS      0.000 MS      0.000 MS
+Pokhara LAN.Pokhara ATM / src Pokhara ATM Request:
+  Manchester LAN.Serve         23   118.66079 S   34406.459 MS  177.61086 S 
+Manchester LAN.Server / src Server Response:
+  ECHO                          0       0.000 MS      0.000 MS      0.000 MS
+
+
+Compuware COMNET III  Release 2.5.2.814  Wed Dec 15 09:58:37 2021   PAGE     7
+
+                             20048871 Biraj Sapkota                             
+
+                 MESSAGE + RESPONSE SOURCES: MESSAGE DELIVERED                  
+
+                    REPLICATION 1 FROM 60.0 TO 180.0 SECONDS                    
+
+ORIGIN / MSG SRC NAME:  MESSAGES                 MESSAGE DELAY 
+  DESTINATION LIST      ASSEMBLED      AVERAGE       STD DEV       MAXIMUM
+______________________  _________   ____________  ____________  ____________
+
+Kathmandu LAN.KTM Teller / src KTM Teller Request:
+  Manchester LAN.Serve          0       0.000 MS      0.000 MS      0.000 MS
+Kathmandu LAN.Kathmandu ATM / src KTM ATM Request:
+  Manchester LAN.Serve        256   116.37190 S   33451.786 MS  175.23708 S 
+Pokhara LAN.Pokhara Teller / src Pokhara Teller Request:
+  Manchester LAN.Serve          0       0.000 MS      0.000 MS      0.000 MS
+Pokhara LAN.Pokhara ATM / src Pokhara ATM Request:
+  Manchester LAN.Serve        252   117.47514 S   33291.949 MS  175.04600 S 
+Manchester LAN.Server / src Server Response:
+  ECHO                          0       0.000 MS      0.000 MS      0.000 MS

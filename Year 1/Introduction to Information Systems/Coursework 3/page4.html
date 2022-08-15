@@ -1,0 +1,244 @@
+<!DOCTYPE html> <!-- doctype declaration of HTML5 -->
+<html>
+
+<head>
+    <!-- meta tag for describing the overall content, highlighting keywords and naming author-->
+    <meta name="description" content="Join and Feedback page">
+    <meta name="keywords" content="Form, Feedback, Validation">
+    <meta name="author" content="Biraj Sapkota">
+
+    <title>Joining page</title>
+
+    <!-- links external css file for editing this webpage-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- different Internal CSS used-->
+    <style>
+        marquee {
+            /*changes the font size and color of the text in marquee tag  */
+            color: yellowgreen;
+            font-size: 40px;
+        }
+
+        .both {
+            /*creates a flex layout for all content within the class 'both'*/
+            display: flex;
+        }
+
+        .photo {
+            /*uses 60% of the space for the coontent of 'photo' class keeping 5 pixels margin*/
+            flex: 60%;
+            margin: 5px;
+        }
+
+        .form {
+            /*sets background color for 40% flex part with 5 pixels margin*/
+            flex: 40%;
+            background-color: antiquewhite;
+            margin: 5px;
+        }
+
+        form {
+            /*makes all the text in centre of the space provided with 100px top padding*/
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        form b {
+            /*makes all the content within bold tag of form tag of font-size 20 pixels
+                        with text-alignment as centre*/
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Use of nav semantic tag to seperate the navigation content from others-->
+    <nav>
+        <table>
+            <!-- table tag for placing content row-wise-->
+            <tr>
+                <td>
+                    <img src="images\user.jpg" alt="user icon"> <!-- img tag for inserting images-->
+                </td>
+                <th>
+                    <strong>PORTFOLIO</strong> <!-- strong or <b> tag for bold text-->
+                </th>
+            </tr>
+        </table>
+        <ul>
+            <!-- unordered list with the list tag to lits down the contents-->
+            <li>
+                <a href="homepage.html">Home</a> <!-- anchor tag for navigating between webpages-->
+            </li>
+            <li>
+                <a href="page1.html">About me</a>
+            </li>
+            <li>
+                <a href="page2.html">Blog</a>
+            </li>
+            <li>
+                <a href="page3.html">Research</a>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+    <!--draws a horizontal line for seperating contents-->
+    <header>
+        <marquee direction="left">Wanna Join with me- fill the form !!</marquee> <!-- marquee for scrolling text-->
+    </header>
+    <article>
+        <div class="both">
+            <!-- div tag for specifying classes or id's for several block of codes -->
+            <div class="photo">
+                <img src="images/form.JPG" alt="Aside Picture" height="100%" width="100%">
+            </div>
+            <div class="form">
+                <!-- form tag for creating form-->
+                <form name="message" onsubmit="formValid()">
+                    <!--invokes formValid() on clicking submit-->
+                    <b style="font-size: 50px;">Form -to Join</b>
+                    <br><br><br><br><br> <!-- <br> tag keeps a line break-->
+                    <b>First name</b>
+                    <input type="text" name="firstname"> <!-- gives a horizontal space for input as text-->
+                    <br><br>
+                    <b>Last name</b>
+                    <input type="text" name="lastname">
+                    <br><br>
+                    <b>Gender</b>
+                    <input type="radio" name="gender" value="male" checked>
+                    <!-- forms radio buttons to check one from many options-->
+                    <i>male</i>
+                    <input type="radio" name="gender" value="female">
+                    <i>female</i>
+                    <input type="radio" name="gender" value="others">
+                    <i>other</i>
+                    <br><br>
+                    <b>D.O.B</b>
+                    <select>
+                        <!--creates a drop down list for the user to select one category-->
+                        <option>jan</option>
+                        <option>feb</option>
+                        <!--option tag helps to make multiple options in a list-->
+                        <option>mar</option>
+                        <option>apr</option>
+                        <option>may</option>
+                        <option>jun</option>
+                        <option>jul</option>
+                        <option>aug</option>
+                        <option>sep</option>
+                        <option>oct</option>
+                        <option>nov</option>
+                        <option>dec</option>
+                    </select>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    <select>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                        <option>2006</option>
+                        <option>2007</option>
+                        <option>2008</option>
+                        <option>2009</option>
+                        <option>2010</option>
+                        <option>2011</option>
+                        <option>2012</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <object>2016</option>
+                    </select>
+                    <br><br>
+                    <b>E-mail</b>
+                    <input type="text" name="email">
+                    <br><br><br>
+                    <b>Comment:</b>
+                    <br><br>
+                    <!-- textarea tag provides an enough space for the user to express ideas-->
+                    <textarea name="messagebox" cols="40" rows="15" placeholder="give your feedback."></textarea>
+                    <br><br><br><br><br>
+                    <input type="Submit" value="Submit Form">
+                    <!--creates a submit button for submitting forms -->
+                </form>
+            </div>
+        </div>
+    </article>
+    <hr>
+    <footer>
+        <!-- semantic tag for identifying footer content-->
+        <ul>
+            <li>
+                <!--Use of anchor and image tag to make the image as a link to navigate-->
+                <a href="https://www.facebook.com/biraj.sapkota.58">
+                    <img src="images\fb.jpg" alt="Facebook icon">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/biraj_sapkota123/">
+                    <img src="images\ig.jpg" alt="Instagram icon">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <!--The Internal java script goes here-->
+    <script>
+        function formValid() {      //this function checks the validity of the given input
+
+            // declaring and storing the input data in several specific variables
+
+            var fName = document.forms["message"]["firstname"].value;
+            var lName = document.forms["message"]["lastname"].value;
+            var Gen = document.forms["message"]["gender"].value;
+            var mail = document.forms["message"]["email"].value;
+            var msg = document.forms["message"]["messagebox"].value;
+
+            //checks whether each fields are empty or not
+            if (fName == "" || lName == "" || Gen == "" || mail == "" || msg == "") {
+                //shows an error message when condition is true
+                alert("Error: Some field is left empty. Kindly fill it.");
+            }
+            else {
+                //shows a success message when condition is false
+                alert("Your response has been recorded successfully");
+            }
+        }
+    </script>
+</body>
+
+</html>

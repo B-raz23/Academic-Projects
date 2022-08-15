@@ -1,0 +1,190 @@
+<!DOCTYPE html> <!-- doctype declaration of HTML5 -->
+<html>
+
+<head>
+    <!-- meta tag for describing the overall content, highlighting keywords and naming author-->
+    <meta name="description" content="making blog">
+    <meta name="keywords" content="blog, essay, picture">
+    <meta name="author" content="Biraj Sapkota">
+
+    <title>blog page</title>
+
+    <!-- links external css file for editing this webpage-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- different Internal CSS used-->
+    <style>
+        .blog {
+            /*edits the page layout using flex*/
+            display: flex;
+        }
+
+        .photo {
+            /*it gives 20% of the screen to photo class*/
+            flex: 25%;
+        }
+
+        .photo img {
+            /*manipulates on the size of images with proper margin*/
+            height: 100%;
+            width: 100%;
+            margin-right: 5px;
+        }
+
+        #par {
+            /*gives 40% of the screen to par ID adding margin and paddings along with a background color*/
+            flex: 50%;
+            margin: 10px;
+            padding: 20px;
+            background-color: bisque;
+        }
+
+        h1 {
+            /*edits font size and color of text with padding and margin of h1 tag*/
+            font-size: 50px;
+            padding-top: 1px;
+            margin-top: 0%;
+            color: blueviolet;
+        }
+
+        p {
+            /*changes font family and size of taxt in p tag making justify text-alignment with 1px margin*/
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-align: justify;
+            margin: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Use of nav semantic tag to seperate the navigation content from others-->
+    <nav>
+        <table>
+            <!-- table tag for placing content row-wise-->
+            <tr>
+                <td>
+                    <img src="images\user.jpg" alt="user icon"> <!-- img tag for inserting images-->
+                </td>
+                <th>
+                    <strong>PORTFOLIO</strong> <!-- strong or <b> tag for bold text-->
+                </th>
+            </tr>
+        </table>
+        <ul>
+            <!-- unordered list with the list tag to lits down the contents-->
+            <li>
+                <a href="homepage.html">Home</a> <!-- anchor tag for navigating between webpages-->
+            </li>
+            <li>
+                <a href="page1.html">About me</a>
+            </li>
+            <li>
+                <a href="page3.html">Research</a>
+            </li>
+            <li>
+                <button>
+                    <!-- creates a button as a link to navigate-->
+                    <a href="page4.html">Join me</a>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+    <!--draws a horizontal line for seperating contents-->
+
+    <br><br><br>
+
+    <article>
+        <div class="blog">
+            <!--div tags for creating classes and IDs -->
+            <div class="photo">
+                <img src="images/tech1.jpg" alt="picture">
+                <!--inserts image to the webpage-->
+            </div>
+            <div id="par">
+                <!--div for making IDs-->
+                <h1 style="text-align: center;">Technology Impacts</h1>
+                <!--h1 for giving headings-->
+                <!--p tags for making paragraphs-->
+                <p>
+                    With the passage of time, technology is also becoming advance. The recent world is running due to
+                    the modern technology. This advancement of technology had brought a lot of pros as well as cons to
+                    humans. All the nations and public are seeking for more advance technology. Life style of people are
+                    changing drastically due to the invoke of modern technology. No one wants to stay behind from
+                    technology. All wants to be ahead in using technology devices or gadgets for ease and comfort
+                    lifestyle. And it’s true that if one gets away from technology he/ she couldn’t compete with others
+                    in any field or areas and might have hard times.
+                </p>
+                <br>
+                <p>
+                    The modern banks, hospitals, share market and even several groceries are executed with the use of
+                    modern technology. In the near days, the use of paper notes might be disappeared like as the coins
+                    today. This advancement had brought people’s life to heaven. Today, everyone is interconnected every
+                    time worldwide. This impact has made a positive impact on our daily life that no one needs to work
+                    hard physically in order to survive. Focusing on context of students, technology had helped in their
+                    reading and learning processes. Talking about now, the severe rise of the worldwide pandemic of
+                    COVID-19 had affected many fields including education. But the technology had made an alternate way
+                    for the learning processes. Students can attend the classes right at their home through several
+                    means. They can fully revise and go through the content afterwards as well through recorded session
+                    videos.
+                </p>
+                <br>
+                <p>
+                    Moving on students can research for several new things online. They could enhance their knowledge on
+                    newer things. Moreover, several institutions and colleges had been providing free or low cost online
+                    classes which might be a beneficial for the students. Students can also communicate to the experts
+                    online for several reasons. Additionally, free e-library provided by many institutions can be used
+                    for reading books of desired genres. Furthermore, students could also take part in several programs
+                    or competitions being held online and get certifications as well. So, numerous benefits are there
+                    that the technology had brought in student life.
+                </p>
+                <br>
+                <p>
+                    As is said there would always be a negative aspect for every good one, same things hold true for the
+                    technology as well. The vulnerable things that the technology had brought are highly affecting the
+                    people’s behaviour, physical health and many more. Lots of people are engaged in different criminal
+                    activities through the means of technology like hacking, piracy, etc. which is not a good aspect.
+                    Secondly, due to the ease that the technology has made people wants to stay within his /her room
+                    rather being exposed to the people around. Lack of physical exercise and walk has made the people
+                    suffer from several diseases. In addition to, retina of eyes is totally affected by the rays from
+                    gadgets making them depress and stressful. Due to this, many people are being mentally challenged
+                    nowadays.
+                </p>
+                <br>
+                <p>
+                    To sum up, students are also suffering from the access use of devices in their physical, mental as
+                    well as social health. Small children are compelled to wear spectacles in their child age due to the
+                    excess use of gadgets and devices. Several problems like insomnia, depression and eye-problem are
+                    arising day by day. So, everyone must be concern about the harmful effects of its excessive use.
+                </p>
+            </div>
+            <div class="photo">
+                <!--div tag used for seperating content class wise-->
+                <img src="images/tech2.jpg" alt="photo">
+            </div>
+        </div>
+    </article>
+
+    <!--breaking old lines and shifting to new one-->
+    <br><br><br>
+    <hr>
+    <footer>
+        <!-- semantic tag for identifying footer content-->
+        <ul>
+            <!--Use of anchor and image tag to make the image as a link to navigate-->
+            <li>
+                <a href="https://www.facebook.com/biraj.sapkota.58">
+                    <img src="images\fb.jpg" alt="Facebook icon">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/biraj_sapkota123/">
+                    <img src="images\ig.jpg" alt="Instagram icon">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

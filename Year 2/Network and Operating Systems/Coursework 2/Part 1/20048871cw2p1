@@ -1,0 +1,550 @@
+Script started on 2022-03-05 23:21:56+05:45 [TERM="xterm-256color" TTY="/dev/pts/12" COLUMNS="94" LINES="46"]
+[?2004h]0;braz@pop-os: ~[01;32mbraz@pop-os[00m:[01;34m~[00m$ PS1=''$'P'W'D'>' '
+[?2004l[?2004h/home/braz> [7mmkdir -p IPL/{"Mumbai Indians",KKR,Punjab,"Rajsthan Royals",RCB}[27m[C[C[C[C[C[C[C[C[C[C[C[Cmkdir -p IPL/{"Mumbai Indians",KKR,Punjab,"Rajsthan Royals",RCB}
+[?2004l[?2004h/home/braz> tree IPL
+[?2004l[01;34mIPL[00m
+├── [01;34mKKR[00m
+├── [01;34mMumbai Indians[00m
+├── [01;34mPunjab[00m
+├── [01;34mRajsthan Royals[00m
+└── [01;34mRCB[00m
+
+5 directories, 0 files
+[?2004h/home/braz> [7mcd IPL/KKR[27mcd IPL/KKR
+[?2004l[?2004h/home/braz/IPL/KKR> pwd
+[?2004l/home/braz/IPL/KKR
+[?2004h/home/braz/IPL/KKR> [7mtouch file1 file2[27mtouch file1 file2
+[?2004l[?2004h/home/braz/IPL/KKR> cd ..
+[?2004l[?2004h/home/braz/IPL> [7mrm -i KKR/{file1,file2}[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm -i KKR/{file1,file2}
+[?2004lrm: remove regular empty file 'KKR/file1'? y
+rm: remove regular empty file 'KKR/file2'? y
+[?2004h/home/braz/IPL> tree KKR
+[?2004l[01;34mKKR[00m
+
+0 directories, 0 files
+[?2004h/home/braz/IPL> [7mecho -e "Hello! I am big fan of IPL.\n""14 < (2+2)"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho -e "Hello! I am big fan of IPL.\n""14 < (2+2)"
+[?2004lHello! I am big fan of IPL.
+14 < (2+2)
+[?2004h/home/braz/IPL> pwd
+[?2004l/home/braz/IPL
+[?2004h/home/braz/IPL> cd KKR
+[?2004l[?2004h/home/braz/IPL/KKR> pwd
+[?2004l/home/braz/IPL/KKR
+[?2004h/home/braz/IPL/KKR> [7mpwd;cd;pwd[27mpwd;cd;pwd
+[?2004l/home/braz/IPL/KKR
+/home/braz
+[?2004h/home/braz> [7mcd IPL/KKR[27mcd IPL/KKR
+[?2004l[?2004h/home/braz/IPL/KKR> [7mpwd;cd ..;pwd; cd ..;pwd[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd;cd ..;pwd; cd ..;pwd
+[?2004l/home/braz/IPL/KKR
+/home/braz/IPL
+/home/braz
+[?2004h/home/braz> [7mcd;pwd[27mcd;pwd
+[?2004l/home/braz
+[?2004h/home/braz> ls
+[?2004l20048871cw2p1  [0m[01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  [01;34mIPL[0m  [01;34mMusic[0m  [01;34mPictures[0m  [01;34mPublic[0m  [01;34mTemplates[0m  [01;34mVideos[0m
+[?2004h/home/braz> la[Ks -a
+[?2004l[0m[01;34m.[0m              .bash_logout  [01;34mDesktop[0m    [01;34mIPL[0m       [01;34mPictures[0m                   [01;34mTemplates[0m
+[01;34m..[0m             .bashrc       [01;34mDocuments[0m  [01;34m.local[0m    .profile                   [01;34mVideos[0m
+20048871cw2p1  [01;34m.cache[0m        [01;34mDownloads[0m  [01;34m.mozilla[0m  [01;34mPublic[0m
+.bash_history  [01;34m.config[0m       [01;34m.gnupg[0m     [01;34mMusic[0m     .sudo_as_admin_successful
+[?2004h/home/braz> ls -al
+[?2004ltotal 88
+drwxr-x--- 16 braz braz  4096 Mar  5 23:22 [0m[01;34m.[0m
+drwxr-xr-x  3 root root  4096 Feb 15 14:17 [01;34m..[0m
+-rw-rw-r--  1 braz braz     0 Mar  5 23:21 20048871cw2p1
+-rw-------  1 braz braz 11773 Mar  5 23:19 .bash_history
+-rw-r--r--  1 braz braz   220 May 10  2021 .bash_logout
+-rw-r--r--  1 braz braz  3774 Mar  5 23:21 .bashrc
+drwx------ 16 braz braz  4096 Feb 27 23:09 [01;34m.cache[0m
+drwx------ 16 braz braz  4096 Mar  4 00:04 [01;34m.config[0m
+drwxr-xr-x  2 braz braz  4096 Mar  4 02:46 [01;34mDesktop[0m
+drwxr-xr-x  4 braz braz  4096 Mar  4 02:43 [01;34mDocuments[0m
+drwxr-xr-x  2 braz braz  4096 Mar  4 02:46 [01;34mDownloads[0m
+drwx------  3 braz braz  4096 Feb 15 14:19 [01;34m.gnupg[0m
+drwxrwxr-x  7 braz braz  4096 Mar  5 23:22 [01;34mIPL[0m
+drwx------  3 braz braz  4096 Feb 15 14:19 [01;34m.local[0m
+drwx------  4 braz braz  4096 Feb 15 14:25 [01;34m.mozilla[0m
+drwxr-xr-x  2 braz braz  4096 Mar  4 01:12 [01;34mMusic[0m
+drwxr-xr-x  2 braz braz  4096 Feb 15 14:19 [01;34mPictures[0m
+-rw-r--r--  1 braz braz   807 May 10  2021 .profile
+drwxr-xr-x  2 braz braz  4096 Feb 15 14:19 [01;34mPublic[0m
+-rw-r--r--  1 braz braz     0 Feb 24 19:48 .sudo_as_admin_successful
+drwxr-xr-x  2 braz braz  4096 Feb 15 14:19 [01;34mTemplates[0m
+drwxr-xr-x  2 braz braz  4096 Feb 15 14:19 [01;34mVideos[0m
+[?2004h/home/braz> mkdir cw2
+[?2004l[?2004h/home/braz> [7mcd;pwd;cd cw2;pwd[27m[C[C[C[C[C[C[C[C[C[C[C[Ccd;pwd;cd cw2;pwd
+[?2004l/home/braz
+/home/braz/cw2
+[?2004h/home/braz/cw2> ls -R
+[?2004l.:
+[?2004h/home/braz/cw2> [7mcd /home/braz/IPL/RCB[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd /home/braz/IPL/RCB
+[?2004l[?2004h/home/braz/IPL/RCB> cat >testX
+[?2004laaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+[?2004h/home/braz/IPL/RCB> cat >testX[KY
+[?2004laaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+[?2004h/home/braz/IPL/RCB> cat >testY[KZ
+[?2004laaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+[?2004h/home/braz/IPL/RCB> cat >testZ[1PtestZ[C[C[C[C[C[KX
+[?2004laaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+[?2004h/home/braz/IPL/RCB> cat testX[KY
+[?2004laaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+[?2004h/home/braz/IPL/RCB> cat testYX[KZ
+[?2004laaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+[?2004h/home/braz/IPL/RCB> [7mcp {testX,testY,testZ} ../"Rajsthan Royals"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccp {testX,testY,testZ} ../"Rajsthan Royals"
+[?2004l[?2004h/home/braz/IPL/RCB> [7mcat testX testY testZ[27mcat testX testY testZ
+[?2004laaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+[?2004h/home/braz/IPL/RCB> [7mcat testX testY testZ >testResult[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat testX testY testZ >testResult
+[?2004l[?2004h/home/braz/IPL/RCB> [7mcat testResult[27mcat testResult
+[?2004laaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+[?2004h/home/braz/IPL/RCB> [7mcat test[XYZ][27mcat test[XYZ]
+[?2004laaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+[?2004h/home/braz/IPL/RCB> [7mls -l[27mls -l
+[?2004ltotal 16
+-rw-rw-r-- 1 braz braz 216 Mar  5 23:26 testResult
+-rw-rw-r-- 1 braz braz  72 Mar  5 23:25 testX
+-rw-rw-r-- 1 braz braz  72 Mar  5 23:25 testY
+-rw-rw-r-- 1 braz braz  72 Mar  5 23:25 testZ
+[?2004h/home/braz/IPL/RCB> [7mchmod 000 testX[27mchmod 000 testX
+[?2004l[?2004h/home/braz/IPL/RCB> [7mls -l testX[27mls -l testX
+[?2004l---------- 1 braz braz 72 Mar  5 23:25 testX
+[?2004h/home/braz/IPL/RCB> [7mcat testX[27mcat testX
+[?2004lcat: testX: Permission denied
+[?2004h/home/braz/IPL/RCB> [7mcat >>testX[27mcat >>testX
+[?2004lbash: testX: Permission denied
+[?2004h/home/braz/IPL/RCB> [7mchmod 600 testX[27mchmod 600 testX
+[?2004l[?2004h/home/braz/IPL/RCB> [7mls -l testX[27mls -l testX
+[?2004l-rw------- 1 braz braz 72 Mar  5 23:25 testX
+[?2004h/home/braz/IPL/RCB> [7mcat testX[27mcat testX
+[?2004laaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+[?2004h/home/braz/IPL/RCB> [7mcat >>testX[27mcat >>testX
+[?2004lI  t worked      really worked!!
+[?2004h/home/braz/IPL/RCB> cd ..
+[?2004l[?2004h/home/braz/IPL> [7mls -l RCB[27mls -l RCB
+[?2004ltotal 16
+-rw-rw-r-- 1 braz braz 216 Mar  5 23:26 testResult
+-rw------- 1 braz braz  91 Mar  5 23:28 testX
+-rw-rw-r-- 1 braz braz  72 Mar  5 23:25 testY
+-rw-rw-r-- 1 braz braz  72 Mar  5 23:25 testZ
+[?2004h/home/braz/IPL> [7mchmod 000 RCB[27mchmod 000 RCB
+[?2004l[?2004h/home/braz/IPL> [7mls -l RCB[27mls -l RCB
+[?2004lls: cannot open directory 'RCB': Permission denied
+[?2004h/home/braz/IPL> [7mcat RCB/testZ[27mcat RCB/testZ
+[?2004lcat: RCB/testZ: Permission denied
+[?2004h/home/braz/IPL> [7mtouch RCB/file.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctouch RCB/file.txt
+[?2004ltouch: cannot touch 'RCB/file.txt': Permission denied
+[?2004h/home/braz/IPL> [7mls RCB/test[XYZ][27mls RCB/test[XYZ]
+[?2004lls: cannot access 'RCB/test[XYZ]': Permission denied
+[?2004h/home/braz/IPL> [7mchmod 700 RCB[27mchmod 700 RCB
+[?2004l[?2004h/home/braz/IPL> [7mls -l RCB[27mls -l RCB
+[?2004ltotal 16
+-rw-rw-r-- 1 braz braz 216 Mar  5 23:26 testResult
+-rw------- 1 braz braz  91 Mar  5 23:28 testX
+-rw-rw-r-- 1 braz braz  72 Mar  5 23:25 testY
+-rw-rw-r-- 1 braz braz  72 Mar  5 23:25 testZ
+[?2004h/home/braz/IPL> [7mcat RCB/testZ[27mcat RCB/testZ
+[?2004laaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+[?2004h/home/braz/IPL> [7mtouch RCB/file.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctouch RCB/file.txt
+[?2004l[?2004h/home/braz/IPL> [7mls RCB/test[XYZ][27mls RCB/test[XYZ]
+[?2004lRCB/testX  RCB/testY  RCB/testZ
+[?2004h/home/braz/IPL> [7mcd "Rajsthan Royals"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd "Rajsthan Royals"
+[?2004l[?2004h/home/braz/IPL/Rajsthan Royals> [7mgrep bb testX[27mgrep bb testX
+[?2004laaa[01;31m[Kbb[m[K Aaaaa
+[01;31m[Kbb[m[Kbcc B[01;31m[Kbb[m[K[01;31m[Kbb[m[K
+[?2004h/home/braz/IPL/Rajsthan Royals> [7mgrep -v bb testX[27mgrep -v bb testX
+[?2004lAAAAA
+BBBBB
+ff-ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+[?2004h/home/braz/IPL/Rajsthan Royals> [7mgrep -n bb testX[27mgrep -n bb testX
+[?2004l[32m[K1[m[K[36m[K:[m[Kaaa[01;31m[Kbb[m[K Aaaaa
+[32m[K3[m[K[36m[K:[m[K[01;31m[Kbb[m[Kbcc B[01;31m[Kbb[m[K[01;31m[Kbb[m[K
+[?2004h/home/braz/IPL/Rajsthan Royals> [7mgrep -l bb *[27mgrep -l bb *
+[?2004l[35m[KtestX[m[K
+[35m[KtestY[m[K
+[35m[KtestZ[m[K
+[?2004h/home/braz/IPL/Rajsthan Royals> [7mgrep -i bb *[27mgrep -i bb *
+[?2004l[35m[KtestX[m[K[36m[K:[m[Kaaa[01;31m[Kbb[m[K Aaaaa
+[35m[KtestX[m[K[36m[K:[m[K[01;31m[Kbb[m[Kbcc [01;31m[KBb[m[K[01;31m[Kbb[m[Kb
+[35m[KtestX[m[K[36m[K:[m[K[01;31m[KBB[m[K[01;31m[KBB[m[KB
+[35m[KtestY[m[K[36m[K:[m[Kaaa[01;31m[Kbb[m[K Aaaaa
+[35m[KtestY[m[K[36m[K:[m[K[01;31m[Kbb[m[Kbcc [01;31m[KBb[m[K[01;31m[Kbb[m[Kb
+[35m[KtestY[m[K[36m[K:[m[K[01;31m[KBB[m[K[01;31m[KBB[m[KB
+[35m[KtestZ[m[K[36m[K:[m[Kaaa[01;31m[Kbb[m[K Aaaaa
+[35m[KtestZ[m[K[36m[K:[m[K[01;31m[Kbb[m[Kbcc [01;31m[KBb[m[K[01;31m[Kbb[m[Kb
+[35m[KtestZ[m[K[36m[K:[m[K[01;31m[KBB[m[K[01;31m[KBB[m[KB
+[?2004h/home/braz/IPL/Rajsthan Royals> [7mgrep -i BB *[27mgrep -i BB *
+[?2004l[35m[KtestX[m[K[36m[K:[m[Kaaa[01;31m[Kbb[m[K Aaaaa
+[35m[KtestX[m[K[36m[K:[m[K[01;31m[Kbb[m[Kbcc [01;31m[KBb[m[K[01;31m[Kbb[m[Kb
+[35m[KtestX[m[K[36m[K:[m[K[01;31m[KBB[m[K[01;31m[KBB[m[KB
+[35m[KtestY[m[K[36m[K:[m[Kaaa[01;31m[Kbb[m[K Aaaaa
+[35m[KtestY[m[K[36m[K:[m[K[01;31m[Kbb[m[Kbcc [01;31m[KBb[m[K[01;31m[Kbb[m[Kb
+[35m[KtestY[m[K[36m[K:[m[K[01;31m[KBB[m[K[01;31m[KBB[m[KB
+[35m[KtestZ[m[K[36m[K:[m[Kaaa[01;31m[Kbb[m[K Aaaaa
+[35m[KtestZ[m[K[36m[K:[m[K[01;31m[Kbb[m[Kbcc [01;31m[KBb[m[K[01;31m[Kbb[m[Kb
+[35m[KtestZ[m[K[36m[K:[m[K[01;31m[KBB[m[K[01;31m[KBB[m[KB
+[?2004h/home/braz/IPL/Rajsthan Royals> [7mgrep -c bb *[27mgrep -c bb *
+[?2004l[35m[KtestX[m[K[36m[K:[m[K2
+[35m[KtestY[m[K[36m[K:[m[K2
+[35m[KtestZ[m[K[36m[K:[m[K2
+[?2004h/home/braz/IPL/Rajsthan Royals> [7mgrep '^A' *[27mgrep '^A' *
+[?2004l[35m[KtestX[m[K[36m[K:[m[K[01;31m[KA[m[KAAAA
+[35m[KtestY[m[K[36m[K:[m[K[01;31m[KA[m[KAAAA
+[35m[KtestZ[m[K[36m[K:[m[K[01;31m[KA[m[KAAAA
+[?2004h/home/braz/IPL/Rajsthan Royals> [7mgrep -n '^' testX[27mgrep -n '^' testX
+[?2004l[32m[K1[m[K[36m[K:[m[Kaaabb Aaaaa
+[32m[K2[m[K[36m[K:[m[KAAAAA
+[32m[K3[m[K[36m[K:[m[Kbbbcc Bbbbb
+[32m[K4[m[K[36m[K:[m[KBBBBB
+[32m[K5[m[K[36m[K:[m[Kff-ff Ccccc
+[32m[K6[m[K[36m[K:[m[KCCCCC
+[32m[K7[m[K[36m[K:[m[Kcccdd Ddddd
+[32m[K8[m[K[36m[K:[m[KDDDDD
+[?2004h/home/braz/IPL/Rajsthan Royals> [7malias lsl="ls -l" lsR="ls -R"[27malias lsl="ls -l" lsR="ls -R"
+[?2004l[?2004h/home/braz/IPL/Rajsthan Royals> alias lsl="ls -l" lsR="ls -R"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004lalias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+alias lsR='ls -R'
+alias lsl='ls -l'
+[?2004h/home/braz/IPL/Rajsthan Royals> cd
+[?2004l[?2004h/home/braz> lsl
+[?2004ltotal 52
+-rw-rw-r-- 1 braz braz 12288 Mar  5 23:30 20048871cw2p1
+drwxrwxr-x 2 braz braz  4096 Mar  5 23:24 [0m[01;34mcw2[0m
+drwxr-xr-x 2 braz braz  4096 Mar  4 02:46 [01;34mDesktop[0m
+drwxr-xr-x 4 braz braz  4096 Mar  4 02:43 [01;34mDocuments[0m
+drwxr-xr-x 2 braz braz  4096 Mar  4 02:46 [01;34mDownloads[0m
+drwxrwxr-x 7 braz braz  4096 Mar  5 23:22 [01;34mIPL[0m
+drwxr-xr-x 2 braz braz  4096 Mar  4 01:12 [01;34mMusic[0m
+drwxr-xr-x 2 braz braz  4096 Feb 15 14:19 [01;34mPictures[0m
+drwxr-xr-x 2 braz braz  4096 Feb 15 14:19 [01;34mPublic[0m
+drwxr-xr-x 2 braz braz  4096 Feb 15 14:19 [01;34mTemplates[0m
+drwxr-xr-x 2 braz braz  4096 Feb 15 14:19 [01;34mVideos[0m
+[?2004h/home/braz> lsR
+[?2004l.:
+20048871cw2p1  [0m[01;34mDesktop[0m    [01;34mDownloads[0m  [01;34mMusic[0m     [01;34mPublic[0m     [01;34mVideos[0m
+[01;34mcw2[0m            [01;34mDocuments[0m  [01;34mIPL[0m        [01;34mPictures[0m  [01;34mTemplates[0m
+
+./cw2:
+
+./Desktop:
+
+./Documents:
+[01;34mTutorial[0m  [01;34mWorkshop[0m
+
+./Documents/Tutorial:
+[01;34m4thMarch2022[0m
+
+./Documents/Tutorial/4thMarch2022:
+[01;32mchoseOS[0m  [01;32mifElse[0m
+
+./Documents/Workshop:
+
+./Downloads:
+
+./IPL:
+ [01;34mKKR[0m  [01;34m'Mumbai Indians'[0m   [01;34mPunjab[0m  [01;34m'Rajsthan Royals'[0m   [01;34mRCB[0m
+
+./IPL/KKR:
+
+'./IPL/Mumbai Indians':
+
+./IPL/Punjab:
+
+'./IPL/Rajsthan Royals':
+testX  testY  testZ
+
+./IPL/RCB:
+file.txt  testResult  testX  testY  testZ
+
+./Music:
+
+./Pictures:
+
+./Public:
+
+./Templates:
+
+./Videos:
+[?2004h/home/braz> [7munalias lsl lsR[27m[C[C[C[C[C[C[C[C[C[C[C[Cunalias lsl lsR
+[?2004l[?2004h/home/braz> alias
+[?2004lalias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+[?2004h/home/braz> [7mnano .bashrc[27mnano .bashrc
+[?2004l[?2004h[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;41H(B[0;7m[ Reading... ](B[m[44;39H(B[0;7m[ Read 120 lines ](B[m[H(B[0;7m  GNU nano 5.6.1                               .bashrc                                        [1;93H(B[m[45d(B[0;7m^G(B[m Help[45;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[45;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[46d(B[0;7m^X(B[m Exit[46;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^_(B[m Go To Line[2d[36m# ~/.bashrc: executed by bash(1) for non-login shells.[3d# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)[4d# for examples[6d# If not running interactively, don't do anything[7d[32mcase[39m(B[m (B[0;1m[31m$-[39m(B[m [32min[8;5H[39m(B[m*i*[32m)[39m(B[m [32m;;[9;7H[39m(B[m*[32m)[39m(B[m [32mreturn;;[10desac[12d[36m# don't put duplicate lines or lines starting with space in the history.[13d# See bash(1) for more options[14d[39m(B[mHISTCONTROL[32m=[39m(B[mignoreboth[16d[36m# append to the history file, don't overwrite it[17d[39m(B[mshopt(B[0;1m[35m -s[39m(B[m histappend[19d[36m# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)[20d[39m(B[mHISTSIZE[32m=[39m(B[m1000[21dHISTFILESIZE[32m=[39m(B[m2000[23d[36m# check the window size after each command and, if necessary,[24d# update the values of LINES and COLUMNS.[25d[39m(B[mshopt(B[0;1m[35m -s[39m(B[m checkwinsize[27d[36m# If set, the pattern (B[0;1m[33m"**"(B[0m[36m used in a pathname expansion context will[28d# match all files and zero or more directories and subdirectories.[29d#shopt -s globstar[31d# make less more friendly for non-text input files, see lesspipe(1)[32d[32m[(B[0;1m[35m -x[39m(B[m /usr/bin/lesspipe [32m][39m(B[m [32m&&[39m(B[m [32meval[39m(B[m (B[0;1m[33m"$(SHELL=/bin/sh lesspipe)"[34d(B[0m[36m# set variable identifying the chroot you work in (used in the prompt below)[35d[32mif[39m(B[m [32m[(B[0;1m[35m -z[39m(B[m (B[0;1m[33m"${debian_chroot:-}"[39m(B[m [32m][39m(B[m [32m&&[39m(B[m [32m[(B[0;1m[35m -r[39m(B[m /etc/debian_chroot [32m];[39m(B[m [32mthen[36;5H[39m(B[mdebian_chroot[32m=$((B[0;1m[34mcat[39m(B[m /etc/debian_chroot[32m)[37dfi[39d[36m# set a fancy prompt (non-color, unless we know we (B[0;1m[33m"want"(B[0m[36m color)[40d[32mcase[39m(B[m (B[0;1m[33m"$TERM"[39m(B[m [32min[41;5H[39m(B[mxterm-color[32m|[39m(B[m*-256color[32m)[39m(B[m color_prompt[32m=[39m(B[myes[32m;;[42desac[2d[39m(B[m[?12l[?25h[?25l[7d[?12l[?25h[?25l[17d[?12l[?25h[?25l[44d[K[22d[?12l[?25h[?25l[32d[?12l[?25h[?25l[37d[?12l[?25h[?25l[42d[?12l[?25h[?25l[2;44r[44;1H[4S[1;46r[40;1H[36m# uncomment for a colored prompt, if the terminal has the capability; turned[41d# off by default to not distract the user: the focus in a terminal window[42d# should be on the output of commands, not on the prompt[43d#force_color_prompt=yes[39m(B[m[?12l[?25h[?25l7[2;44r8[44d[5S[1;46r[40;1H[32mif[39m(B[m [32m[(B[0;1m[35m -n[39m(B[m (B[0;1m[33m"$force_color_prompt"[39m(B[m [32m];[39m(B[m [32mthen[41;5Hif[39m(B[m [32m[(B[0;1m[35m -x[39m(B[m /usr/bin/tput [32m][39m(B[m [32m&&[39m(B[m tput setaf 1 [32m>&[39m(B[m/dev/null[32m;[39m(B[m [32mthen[42;8H[36m[1K # We have color support; assume it's compliant with Ecma-48[43;8H[1K # (ISO/IEC-6429). (Lack of such support is extremely rare, and such[39m(B[m[?12l[?25h[?25l[38d[?12l[?25h[?25l[43d[?12l[?25h[?25l7[2;44r8[44d[5S[1;46r[39;8H[36m[1K # a case would tend to support setf rather than setaf.)[40;9H[39m(B[mcolor_prompt[32m=[39m(B[myes[41;5H[32melse[42d[39m(B[mcolor_prompt[32m=[43;5Hfi[39m(B[m[?12l[?25h[?25l7[2;44r8[44d[5S[1;46r[39;1H[32mfi[41dif[39m(B[m [32m[[39m(B[m (B[0;1m[33m"$color_prompt"[39m(B[m [32m=[39m(B[m yes [32m];[39m(B[m [32mthen[42;5H[39m(B[mPS1[32m=(B[0;1m[33m'${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w[39m(B[0;7m>[43;1H(B[0m[32melse[39m(B[m[?12l[?25h[?25l7[2;44r8[44d[5S[1;46r[39;5HPS1[32m=(B[0;1m[33m'${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '[40d(B[0m[32mfi[41d(B[0;1m[34munset[39m(B[m color_prompt force_color_prompt[43d[36m# If this is an xterm set the title to user@host:dir[39m(B[m[?12l[?25h[?25l7[2;44r8[44d[5S[1;46r[39;1H[32mcase[39m(B[m (B[0;1m[33m"$TERM"[39m(B[m [32min[40d[39m(B[mxterm*[32m|[39m(B[mrxvt*[32m)[41;5H[39m(B[mPS1[32m=(B[0;1m[33m"\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"[42;5H(B[0m[32m;;[43d[39m(B[m*[32m)[39m(B[m[?12l[?25h[?25l7[2;44r8[44d[5S[1;46r[39;5H[32m;;[40desac[42d[36m# enable color support of ls and also add handy aliases[43d[32mif[39m(B[m [32m[(B[0;1m[35m -x[39m(B[m /usr/bin/dircolors [32m];[39m(B[m [32mthen[39m(B[m[?12l[?25h[?25l7[2;44r8[44d[5S[1;46r[39;5Htest(B[0;1m[35m -r[39m(B[m ~/.dircolors [32m&&[39m(B[m [32meval[39m(B[m (B[0;1m[33m"$(dircolors -b ~/.dircolors)"[39m(B[m [32m||[39m(B[m [32meval[39m(B[m (B[0;1m[33m"$(dircolors -b)"[40;5H[39m(B[malias ls[32m=(B[0;1m[33m'ls --color=auto'[41;4H(B[0m[36m #alias dir=(B[0;1m[33m'dir --color=auto'[42;4H(B[0m[36m #alias vdir=(B[0;1m[33m'vdir --color=auto'[43d[39m(B[m[?12l[?25h[?25l7[2;44r8[44d[5S[1;46r[39;5Halias (B[0;1m[34mgrep(B[0m[32m=(B[0;1m[33m'grep --color=auto'[40;5H[39m(B[malias fgrep[32m=(B[0;1m[33m'fgrep --color=auto'[41;5H[39m(B[malias egrep[32m=(B[0;1m[33m'egrep --color=auto'[42d(B[0m[32mfi[43d[39m(B[m[?12l[?25h[?25l7[2;44r8[44d[5S[1;46r[39;1H[36m# colored GCC warnings and errors[40d#export GCC_COLORS=(B[0;1m[33m'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'[42d(B[0m[36m# some more ls aliases[43d[39m(B[malias ll[32m=(B[0;1m[33m'ls -alF'[39m(B[m[?12l[?25h[?25l7[2;44r8[44d[5S[1;46r[39;1Halias la[32m=(B[0;1m[33m'ls -A'[40d[39m(B[malias l[32m=(B[0;1m[33m'ls -CF'[42d(B[0m[36m# Add an (B[0;1m[33m"alert"(B[0m[36m alias for long running commands.  Use like so:[43d#   sleep 10; alert[39m(B[m[?12l[?25h[?25l7[2;44r8[44d[10S[1;46r[34;1Halias alert[32m=(B[0;1m[33m'notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(h[39m(B[0;7m>[36;1H(B[0m[36m# Alias definitions.[37d# You may want to put all your additions into a separate file like[38d# ~/.bash_aliases, instead of adding them here directly.[39d# See /usr/share/doc/bash-doc/examples in the bash-doc package.[43d[32mif[39m(B[m [32m[(B[0;1m[35m -f[39m(B[m ~/.bash_aliases [32m];[39m(B[m [32mthen[39m(B[m[?12l[?25h[?25l7[2;44r8[44d[10S[1;46r[34;5H. ~/.bash_aliases[35d[32mfi[37d[36m# enable programmable completion features (you don't need to enable[38d# this, if it's already enabled in /etc/bash.bashrc and /etc/profile[39d# sources /etc/bash.bashrc).[40d[32mif[39m(B[m [32m![39m(B[m shopt -oq posix[32m;[39m(B[m [32mthen[41;3Hif[39m(B[m [32m[(B[0;1m[35m -f[39m(B[m /usr/share/bash-completion/bash_completion [32m];[39m(B[m [32mthen[42;5H[39m(B[m. /usr/share/bash-completion/bash_completion[43;3H[32melif[39m(B[m [32m[(B[0;1m[35m -f[39m(B[m /etc/bash_completion [32m];[39m(B[m [32mthen[39m(B[m[?12l[?25h[?25l7[2;44r8[44d[5S[1;46r[39;5H. /etc/bash_completion[40;3H[32mfi[41dfi[43d[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[A[?12l[?25h[?25l[26d[?12l[?25h[?25l[1;56H(B[0;7m*[93G(B[m[26dalias lsl[32m=(B[0;1m[33m"ls -l"[39m(B[m lsR[32m=(B[0;1m[33m"ls -R"[39m(B[m[?12l[?25h[?25l7[27;44r8[27dM[1;46r[27;1H[?12l[?25h[?25l[44d(B[0;7mSave modified buffer?                                                                         [45;1H Y(B[m Yes[K[46d(B[0;7m N(B[m No  [46;16H (B[0;7m^C(B[m Cancel[K[44;23H[?12l[?25h[?25l[45d(B[0;7m^G(B[m Help[45;24H(B[0;7mM-D(B[m DOS Format[45;47H(B[0;7mM-A(B[m Append[45;70H(B[0;7mM-B(B[m Backup File[46d(B[0;7m^C(B[m Cancel[17G       (B[0;7mM-M(B[m Mac Format[46;47H(B[0;7mM-P(B[m Prepend[46;70H(B[0;7m^T(B[m Browse[44d(B[0;7mFile Name to Write: .bashrc(B[m[?12l[?25h[?25l[44;40H[1K (B[0;7m[ Writing... ](B[m[K[1;56H(B[0;7m [93G(B[m[44;38H(B[0;7m[ Wrote 121 lines ](B[m[J[46d[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h/home/braz> exit
+[?2004lexit
+
+Script done on 2022-03-05 23:32:53+05:45 [COMMAND_EXIT_CODE="0"]
+Script started on 2022-03-06 22:33:51+05:45 [TERM="xterm-256color" TTY="/dev/pts/15" COLUMNS="94" LINES="44"]
+[?2004h]0;braz@pop-os: ~[01;32mbraz@pop-os[00m:[01;34m~[00m$ PS1=''$'P'W'D'>' '
+[?2004l[?2004h/home/braz> lsl
+[?2004ltotal 68
+-rw-rw-r-- 1 braz braz 26447 Mar  5 23:32 20048871cw2p1
+drwxrwxr-x 2 braz braz  4096 Mar  5 23:24 [0m[01;34mcw2[0m
+drwxr-xr-x 2 braz braz  4096 Mar  6 22:31 [01;34mDesktop[0m
+drwxr-xr-x 5 braz braz  4096 Mar  5 23:33 [01;34mDocuments[0m
+drwxr-xr-x 2 braz braz  4096 Mar  4 02:46 [01;34mDownloads[0m
+drwxrwxr-x 7 braz braz  4096 Mar  5 23:22 [01;34mIPL[0m
+drwxr-xr-x 2 braz braz  4096 Mar  4 01:12 [01;34mMusic[0m
+drwxr-xr-x 2 braz braz  4096 Feb 15 14:19 [01;34mPictures[0m
+drwxr-xr-x 2 braz braz  4096 Feb 15 14:19 [01;34mPublic[0m
+drwxr-xr-x 2 braz braz  4096 Feb 15 14:19 [01;34mTemplates[0m
+drwxr-xr-x 2 braz braz  4096 Feb 15 14:19 [01;34mVideos[0m
+[?2004h/home/braz> lsR
+[?2004l.:
+20048871cw2p1  [0m[01;34mDesktop[0m    [01;34mDownloads[0m  [01;34mMusic[0m     [01;34mPublic[0m     [01;34mVideos[0m
+[01;34mcw2[0m            [01;34mDocuments[0m  [01;34mIPL[0m        [01;34mPictures[0m  [01;34mTemplates[0m
+
+./cw2:
+
+./Desktop:
+20048871cw2p1  okay
+
+./Documents:
+[01;34mCoursework[0m  [01;34mTutorial[0m  [01;34mWorkshop[0m
+
+./Documents/Coursework:
+20048871cw2p1
+
+./Documents/Tutorial:
+[01;34m4thMarch2022[0m
+
+./Documents/Tutorial/4thMarch2022:
+[01;32mchoseOS[0m  [01;32mifElse[0m
+
+./Documents/Workshop:
+
+./Downloads:
+
+./IPL:
+ [01;34mKKR[0m  [01;34m'Mumbai Indians'[0m   [01;34mPunjab[0m  [01;34m'Rajsthan Royals'[0m   [01;34mRCB[0m
+
+./IPL/KKR:
+
+'./IPL/Mumbai Indians':
+
+./IPL/Punjab:
+
+'./IPL/Rajsthan Royals':
+testX  testY  testZ
+
+./IPL/RCB:
+file.txt  testResult  testX  testY  testZ
+
+./Music:
+
+./Pictures:
+
+./Public:
+
+./Templates:
+
+./Videos:
+[?2004h/home/braz> nano .bashrc
+[?2004l[?2004h[?1049h[22;0;0t[1;44r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[42;41H(B[0;7m[ Reading... ](B[m[42;39H(B[0;7m[ Read 120 lines ](B[m[H(B[0;7m  GNU nano 5.6.1                               .bashrc                                        [1;93H(B[m[43d(B[0;7m^G(B[m Help[43;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[43;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[44d(B[0;7m^X(B[m Exit[44;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^_(B[m Go To Line[2d[36m# ~/.bashrc: executed by bash(1) for non-login shells.[3d# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)[4d# for examples[6d# If not running interactively, don't do anything[7d[32mcase[39m(B[m (B[0;1m[31m$-[39m(B[m [32min[8;5H[39m(B[m*i*[32m)[39m(B[m [32m;;[9;7H[39m(B[m*[32m)[39m(B[m [32mreturn;;[10desac[12d[36m# don't put duplicate lines or lines starting with space in the history.[13d# See bash(1) for more options[14d[39m(B[mHISTCONTROL[32m=[39m(B[mignoreboth[16d[36m# append to the history file, don't overwrite it[17d[39m(B[mshopt(B[0;1m[35m -s[39m(B[m histappend[19d[36m# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)[20d[39m(B[mHISTSIZE[32m=[39m(B[m1000[21dHISTFILESIZE[32m=[39m(B[m2000[23d[36m# check the window size after each command and, if necessary,[24d# update the values of LINES and COLUMNS.[25d[39m(B[mshopt(B[0;1m[35m -s[39m(B[m checkwinsize[27d[36m# If set, the pattern (B[0;1m[33m"**"(B[0m[36m used in a pathname expansion context will[28d# match all files and zero or more directories and subdirectories.[29d#shopt -s globstar[31d# make less more friendly for non-text input files, see lesspipe(1)[32d[32m[(B[0;1m[35m -x[39m(B[m /usr/bin/lesspipe [32m][39m(B[m [32m&&[39m(B[m [32meval[39m(B[m (B[0;1m[33m"$(SHELL=/bin/sh lesspipe)"[34d(B[0m[36m# set variable identifying the chroot you work in (used in the prompt below)[35d[32mif[39m(B[m [32m[(B[0;1m[35m -z[39m(B[m (B[0;1m[33m"${debian_chroot:-}"[39m(B[m [32m][39m(B[m [32m&&[39m(B[m [32m[(B[0;1m[35m -r[39m(B[m /etc/debian_chroot [32m];[39m(B[m [32mthen[36;5H[39m(B[mdebian_chroot[32m=$((B[0;1m[34mcat[39m(B[m /etc/debian_chroot[32m)[37dfi[39d[36m# set a fancy prompt (non-color, unless we know we (B[0;1m[33m"want"(B[0m[36m color)[40d[32mcase[39m(B[m (B[0;1m[33m"$TERM"[39m(B[m [32min[41;5H[39m(B[mxterm-color[32m|[39m(B[m*-256color[32m)[39m(B[m color_prompt[32m=[39m(B[myes[32m;;[2d[39m(B[m[?12l[?25h[?25l[7d[?12l[?25h[?25l[12d[?12l[?25h[?25l[42d[K[22d[?12l[?25h[?25l[32d[?12l[?25h[?25l[37d[?12l[?25h[?25l[2;42r[42;1H
+[1;44r[41;1H[32mesac[39m(B[m[?12l[?25h[?25l7[2;42r8[42d
+[1;44r[41;1H[?12l[?25h[?25l7[2;42r8[42d
+[1;44r[41;1H[36m# uncomment for a colored prompt, if the terminal has the capability; turned[39m(B[m[?12l[?25h[?25l7[2;42r8[42d[3S[1;44r[39;1H[36m# off by default to not distract the user: the focus in a terminal window[40d# should be on the output of commands, not on the prompt[41d#force_color_prompt=yes[39m(B[m[?12l[?25h[?25l7[2;42r8[42d[5S[1;44r[38;1H[32mif[39m(B[m [32m[(B[0;1m[35m -n[39m(B[m (B[0;1m[33m"$force_color_prompt"[39m(B[m [32m];[39m(B[m [32mthen[39;5Hif[39m(B[m [32m[(B[0;1m[35m -x[39m(B[m /usr/bin/tput [32m][39m(B[m [32m&&[39m(B[m tput setaf 1 [32m>&[39m(B[m/dev/null[32m;[39m(B[m [32mthen[40;8H[36m[1K # We have color support; assume it's compliant with Ecma-48[41;8H[1K # (ISO/IEC-6429). (Lack of such support is extremely rare, and such[39m(B[m[?12l[?25h[?25l7[2;42r8[42d[5S[1;44r[37;8H[36m[1K # a case would tend to support setf rather than setaf.)[38;9H[39m(B[mcolor_prompt[32m=[39m(B[myes[39;5H[32melse[40d[39m(B[mcolor_prompt[32m=[41;5Hfi[39m(B[m[?12l[?25h[?25l7[2;42r8[42d[5S[1;44r[37;1H[32mfi[39dif[39m(B[m [32m[[39m(B[m (B[0;1m[33m"$color_prompt"[39m(B[m [32m=[39m(B[m yes [32m];[39m(B[m [32mthen[40;5H[39m(B[mPS1[32m=(B[0;1m[33m'${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w[39m(B[0;7m>[41;1H(B[0m[32melse[39m(B[m[?12l[?25h[?25l7[2;42r8[42d[5S[1;44r[37;5HPS1[32m=(B[0;1m[33m'${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '[38d(B[0m[32mfi[39d(B[0;1m[34munset[39m(B[m color_prompt force_color_prompt[41d[36m# If this is an xterm set the title to user@host:dir[39m(B[m[?12l[?25h[?25l7[2;42r8[42d[5S[1;44r[37;1H[32mcase[39m(B[m (B[0;1m[33m"$TERM"[39m(B[m [32min[38d[39m(B[mxterm*[32m|[39m(B[mrxvt*[32m)[39;5H[39m(B[mPS1[32m=(B[0;1m[33m"\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"[40;5H(B[0m[32m;;[41d[39m(B[m*[32m)[39m(B[m[?12l[?25h[?25l7[2;42r8[42d[5S[1;44r[37;5H[32m;;[38desac[40d[36m# enable color support of ls and also add handy aliases[41d[32mif[39m(B[m [32m[(B[0;1m[35m -x[39m(B[m /usr/bin/dircolors [32m];[39m(B[m [32mthen[39m(B[m[?12l[?25h[?25l7[2;42r8[42d[5S[1;44r[37;5Htest(B[0;1m[35m -r[39m(B[m ~/.dircolors [32m&&[39m(B[m [32meval[39m(B[m (B[0;1m[33m"$(dircolors -b ~/.dircolors)"[39m(B[m [32m||[39m(B[m [32meval[39m(B[m (B[0;1m[33m"$(dircolors -b)"[38;5H[39m(B[malias ls[32m=(B[0;1m[33m'ls --color=auto'[39;4H(B[0m[36m #alias dir=(B[0;1m[33m'dir --color=auto'[40;4H(B[0m[36m #alias vdir=(B[0;1m[33m'vdir --color=auto'[41d[39m(B[m[?12l[?25h[?25l7[2;42r8[42d[5S[1;44r[37;5Halias (B[0;1m[34mgrep(B[0m[32m=(B[0;1m[33m'grep --color=auto'[38;5H[39m(B[malias fgrep[32m=(B[0;1m[33m'fgrep --color=auto'[39;5H[39m(B[malias egrep[32m=(B[0;1m[33m'egrep --color=auto'[40d(B[0m[32mfi[41d[39m(B[m[?12l[?25h[?25l7[2;42r8[42d[5S[1;44r[37;1H[36m# colored GCC warnings and errors[38d#export GCC_COLORS=(B[0;1m[33m'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'[40d(B[0m[36m# some more ls aliases[41d[39m(B[malias ll[32m=(B[0;1m[33m'ls -alF'[39m(B[m[?12l[?25h[?25l7[2;42r8[42d[5S[1;44r[37;1Halias la[32m=(B[0;1m[33m'ls -A'[38d[39m(B[malias l[32m=(B[0;1m[33m'ls -CF'[40d(B[0m[36m# Add an (B[0;1m[33m"alert"(B[0m[36m alias for long running commands.  Use like so:[41d#   sleep 10; alert[39m(B[m[?12l[?25h[?25l7[2;42r8[42d[5S[1;44r[37;1Halias alert[32m=(B[0;1m[33m'notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(h[39m(B[0;7m>[39;1H(B[0m[36m# Alias definitions.[40d# You may want to put all your additions into a separate file like[41d# ~/.bash_aliases, instead of adding them here directly.[39m(B[m[?12l[?25h[?25l7[2;42r8[42d[5S[1;44r[37;1H[36m# See /usr/share/doc/bash-doc/examples in the bash-doc package.[39d[39m(B[malias lsl[32m=(B[0;1m[33m"ls -l"[39m(B[m lsR[32m=(B[0;1m[33m"ls -R"[41d[39m(B[m[?12l[?25h[?25l7[2;42r8[42d[5S[1;44r[37;1H[32mif[39m(B[m [32m[(B[0;1m[35m -f[39m(B[m ~/.bash_aliases [32m];[39m(B[m [32mthen[38;5H[39m(B[m. ~/.bash_aliases[39d[32mfi[41d[36m# enable programmable completion features (you don't need to enable[39m(B[m[?12l[?25h[?25l7[2;42r8[42d[10S[1;44r[32;1H[36m# this, if it's already enabled in /etc/bash.bashrc and /etc/profile[33d# sources /etc/bash.bashrc).[34d[32mif[39m(B[m [32m![39m(B[m shopt -oq posix[32m;[39m(B[m [32mthen[35;3Hif[39m(B[m [32m[(B[0;1m[35m -f[39m(B[m /usr/share/bash-completion/bash_completion [32m];[39m(B[m [32mthen[36;5H[39m(B[m. /usr/share/bash-completion/bash_completion[37;3H[32melif[39m(B[m [32m[(B[0;1m[35m -f[39m(B[m /etc/bash_completion [32m];[39m(B[m [32mthen[38;5H[39m(B[m. /etc/bash_completion[39;3H[32mfi[40dfi[41d[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[36d[?12l[?25h[?25l[41d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[1;56H(B[0;7m*[93G(B[m[25;41r[25;1H[3T[1;44r[25;1Halias noAllf[32m=(B[0;1m[33m"ls -al | wc -l"[26d[39m(B[malias noAsubsir[32m=(B[0;1m[33m"ls -aR | wc -l"[27d[39m(B[malias noAcs[32m=(B[0;1m[33m"ls -aR | grep ^[gtw] | wc -l"[28d[39m(B[m[?12l[?25h[?25l[42d(B[0;7mSave modified buffer?                                                                         [43;1H Y(B[m Yes[K[44d(B[0;7m N(B[m No  [44;16H (B[0;7m^C(B[m Cancel[K[42;23H[?12l[?25h[?25l[43d(B[0;7m^G(B[m Help[43;24H(B[0;7mM-D(B[m DOS Format[43;47H(B[0;7mM-A(B[m Append[43;70H(B[0;7mM-B(B[m Backup File[44d(B[0;7m^C(B[m Cancel[17G       (B[0;7mM-M(B[m Mac Format[44;47H(B[0;7mM-P(B[m Prepend[44;70H(B[0;7m^T(B[m Browse[42d(B[0;7mFile Name to Write: .bashrc(B[m[?12l[?25h[?25l[42;40H[1K (B[0;7m[ Writing... ](B[m[K[1;56H(B[0;7m [93G(B[m[42;38H(B[0;7m[ Wrote 123 lines ](B[m[J[44d[?12l[?25h[44;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h/home/braz> [?2004l
+exit
+
+Script done on 2022-03-06 22:35:37+05:45 [COMMAND_EXIT_CODE="0"]
+Script started on 2022-03-06 23:15:11+05:45 [TERM="xterm-256color" TTY="/dev/pts/14" COLUMNS="94" LINES="46"]
+[?2004h]0;braz@pop-os: ~[01;32mbraz@pop-os[00m:[01;34m~[00m$ PS1=''P'[1P'$'P'W'D'>' '
+[?2004l[?2004h/home/braz> alias
+[?2004lalias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+alias lsR='ls -R'
+alias lsl='ls -l'
+alias noAcs='ls -aR | grep ^[gtw] | wc -l'
+alias noAllf='ls -al | wc -l'
+alias noAsubsir='ls -aR | wc -l'
+[?2004h/home/braz> noAllf
+[?2004l24
+[?2004h/home/braz> noAsubsir
+[?2004l10485
+[?2004h/home/braz> noAcs
+[?2004l79
+[?2004h/home/braz> history
+[?2004l    1  fc [i]
+    2  fc i
+    3  fc [i]
+    4  history --help
+    5  cd
+    6  ls -la
+    7  vi .bash_history
+    8  history
+    9  vi .bash_history
+   10  history
+   11  exit this session
+   12  history
+   13  history
+   14  clear
+   15  script -a 20048871cw2p1
+   16  script -a 20048871cw2p1
+   17  cat 20048871cw2p1
+   18  PS1='$PWD> '
+   19  alias
+   20  noAllf
+   21  noAsubsir
+   22  noAcs
+   23  history
+   24  PS1='$PWD> '
+   25  exit
+   26  PS1='$PWD> '
+   27  alias
+   28  noAllf
+   29  noAsubsir
+   30  noAcs
+   31  history
+[?2004h/home/braz> !-6
+[?2004lPS1='$PWD> '
+[?2004h/home/braz> fc i
+[?2004lbash: fc: no command found
+[?2004h/home/braz> exit
+[?2004lexit
+
+Script done on 2022-03-06 23:16:20+05:45 [COMMAND_EXIT_CODE="1"]
